@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -o ./style.css --watch"
+    "dev": "npx tailwindcss -o ./style.css --watch & live-server"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
   "dependencies": {
     "tailwindcss": "^3.4.3",
     "tw-elements": "^2.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
   }
 }
