@@ -1,65 +1,87 @@
-import { Carousel, Tooltip, Dropdown,Collapse, Modal, Ripple, initTWE } from "tw-elements";
+// import { Carousel, Tooltip, Dropdown,Collapse, Modal, Ripple, initTWE } from "tw-elements";
 
-initTWE({ Carousel, Tooltip, Dropdown, Collapse, Modal, Ripple });
-
-
+// initTWE({ Carousel, Tooltip, Dropdown, Collapse, Modal, Ripple });
 
 
 
-// // form handler
 
-// document.getElementById('contactForm').addEventListener('submit', function(e) {
-//     e.preventDefault();
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Предотвращаем отправку формы по умолчанию
   
-//     const formData = new FormData(e.target);
-//     const name = formData.get('name');
-//     const phone = formData.get('phone');
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
   
-//     const apiToken = "6091232201:AAFeK7pA7uJID96rEkiMmH649rdLvE4Pyo0";
-//     const chatId = "@salskdjhhakgjfhakjhwkdjbmzxjchzb";
-//     const text = `Имя: ${name}; Телефон: ${phone};`;
+      // Отправляем данные формы в Telegram бота
+      sendTelegramMessage(name, email);
+      
+      // Очищаем форму
+      this.reset();
+    });
   
-//     const urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`;
+    function sendTelegramMessage(name, email) {
+      const apiToken = "6091232201:AAFeK7pA7uJID96rEkiMmH649rdLvE4Pyo0";
+      const chatId = "@salskdjhhakgjfhakjhwkdjbmzxjchzb";
+      const text = `Name: ${name}%0AEmail: ${email}`;
+      const urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`;
   
-//     fetch(urlString, { method: 'GET' })
-//         .then(response => {
-//             if (response.ok) {
-//                 console.log("Запрос на запись отправлен");
-//                 // Здесь можно очистить форму или показать сообщение об успехе
-//             }
-//         })
-//         .catch(error => console.error('Ошибка:', error));
-//   });
+      fetch(urlString)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => console.log(data))
+        .catch(error => console.error('There was a problem with your fetch operation:', error));
+    }
 
 
 
 
-//   document.getElementById('contactForm').addEventListener('submit', function(event) {
-//     event.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
-//     const formData = new FormData(this); // Получаем данные формы
 
-//     // Преобразуем данные формы в объект
-//     const formDataObject = {};
-//     formData.forEach((value, key) => {
-//       formDataObject[key] = value;
-//     });
 
-//     // Отправляем данные формы в Telegram бота
-//     sendTelegramMessage(formDataObject);
-    
-//     // Очищаем форму
-//     this.reset();
-//   });
+// footer form 
+
+    document.getElementById('footer_form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Предотвращаем отправку формы по умолчанию
   
-    
-//   function sendTelegramMessage(formData) {
-//     const apiToken = "6091232201:AAFeK7pA7uJID96rEkiMmH649rdLvE4Pyo0";
-//     const chatId = "@salskdjhhakgjfhakjhwkdjbmzxjchzb";
-//     const text = `Name: ${formData.name}%0AEmail: ${formData.email}%0AMessage: ${formData.message}`;
-//     const urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`;
+      const footer_name = document.getElementById('footer_name').value;
+      const footer_email = document.getElementById('footer_email').value;
+      const footer_tel = document.getElementById('footer_tel').value;
+      const footer_message = document.getElementById('footer_message').value;
 
-//     const request = new XMLHttpRequest();
-//     request.open("GET", urlString);
-//     request.send();
-//   }
+
+  
+      // Отправляем данные формы в Telegram бота
+      sendTelegramMessage(
+        footer_name,
+        footer_email,
+        footer_tel,
+        footer_message
+      );
+      
+      // Очищаем форму
+      this.reset();
+    });
+  
+    function sendTelegramMessage(footer_name, footer_email, footer_tel,footer_message) {
+      const apiToken = "6091232201:AAFeK7pA7uJID96rEkiMmH649rdLvE4Pyo0";
+      const chatId = "@salskdjhhakgjfhakjhwkdjbmzxjchzb";
+      const text = `footer_имя: ${footer_name}%0Aemail: ${footer_email}%0Atel: ${footer_tel}%0Amessage: ${footer_message}`;
+      const urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`;
+  
+      fetch(urlString)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => console.log(data))
+        .catch(error => console.error('There was a problem with your fetch operation:', error));
+    }
+  });
+  

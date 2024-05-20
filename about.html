@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -181,42 +181,55 @@
 
         <header
             class="flex container mx-auto text-black bg-white w-[1920px] justify-between items-center">
-            <div class="header-logo text-center"><a href="index.html">Georgian <br> Electric Group</a></div>
+            <div class="header-logo text-center"><a href="index.html"><img class="max-w-[100px] h-auto" src="/img/logo.png" alt=""> </a></div>
             <nav class="w-[50%]">
                 <ul class="flex flex-row justify-between">
                     <li><a href="about.html">О нас</a></li>
-                    <li>Услуги</li>
+                    <li class="font-medium">Услуги</li>
                     <li>Наши партнеры</li>
                     <li>Вакансии</li>
                     <li>Мы в соцсетях</li>
                     <li>Контакты</li>
                 </ul>
             </nav>
-            <div class="header-contacts">
-                <div class="tf">
-                    <div><span>Пн.-Вс. с 8.00 до 23.00</span></div>
+            <div class="header-contacts flex flex-col gap-2">
+                
+                    <div>Пн.-Вс. <span class="font-bold">с 8.00 до 23.00</span></div>
                     <div class="tel">
-                        <a href="tel:+78126605530" class="zphone">8 (812) 660-55-30</a>
+                        <a href="tel:+9955518282" class="contact-phone font-bold">+995 551-82-82</a>
                     </div>
-                    <div class="header-socials">
-                        <a href="#">Facebook</a>
-                        <a href="#">TT</a>
-                        <a href="#">YT</a>
-                        <a href="#">Insta</a>
+            
+                    <div class="header-socials flex gap-2">
+                        <a href="#"><img class="w-[20px] max-h-[20px]" src="img/insta.svg" alt="#"></a>
+                        <a href="#"><img class="w-[20px]" src="img/tt.svg" alt="#"></a>
+                        <a href="#"><img class="w-[20px]" src="img/yt.svg" alt="#"></a>
+                        <a href="#"><img class="w-[20px]" src="img/fb.svg" alt="#"></a>
+                        <a href="#"><img class="w-[20px]" src="img/tg.svg" alt="#"></a>
+                        <a href="#"><img class="w-[20px]" src="img/wa.svg" alt="#"></a>
+            
                     </div>
-                </div>
+            
+                
             </div>
             <div class="header-cta">
-                <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
-                    class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
-                    Связаться с нами
+                <button
+                class="flex mb-4 items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false"
+                data-twe-ripple-init data-twe-ripple-color="light">
+                    Позвонить
+                </button>
+                <button
+                class="flex items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false"
+                data-twe-ripple-init data-twe-ripple-color="light">
+                    Оставить заявку
                 </button>
             </div>
             <div class="lang-switch">
                 <div class="relative" data-twe-dropdown-ref>
                     <button
-                        class="flex items-center rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-                        type="button" id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false"
+                        class="flex items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                        id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false"
                         data-twe-ripple-init data-twe-ripple-color="light">
                         RU
                         <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
@@ -252,7 +265,7 @@
 
     <div id="carouselExampleCaptions" class="relative" data-twe-carousel-init data-twe-ride="carousel">
         <!--Carousel indicators-->
-        <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+        <!-- <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
             data-twe-carousel-indicators>
             <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="0"
                 data-twe-carousel-active
@@ -264,7 +277,7 @@
             <button type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide-to="2"
                 class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                 aria-label="Slide 3"></button>
-        </div>
+        </div> -->
 
         <!--Carousel items-->
         <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
@@ -274,18 +287,18 @@
                 <img src="/img/electric1.jpg" class="block w-full"
                     alt="..." />
                 <div class="p-4 bg-white absolute hidden py-5 text-left text-black md:block" style="left: 10%; top: 30%;">
-                    <h1 class="text-5xl mb-4">Georgian <br> Electric <br> Group</h5>
+                    <h1 class="text-5xl mb-4"><img class="max-w-[200px] h-auto" src="/img/logo.png" alt=""></h5>
                     <h2 class="text-2xl mb-4">
                         Электромонтажные работы в Батуми с 12-летним опытом: <br> надежно, качественно,
                 профессионально
                     </h2>
                     <button type="button"
-                class="inline-block rounded bg-warning px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-warning-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-warning-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+                class="inline-block rounded bg-warning px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-warning-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-warning-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
                 Наши работы
             </button>
-            <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
-                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
-                Связаться с нами
+            <button data-twe-ripple-init data-twe-ripple-color="light"
+                class="inline-block rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+                Оставить заявку
             </button>
                 </div>
             </div>
@@ -301,12 +314,12 @@
                 профессионально
                     </h2>
                     <button type="button"
-                class="inline-block rounded bg-warning px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-warning-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-warning-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+                class="inline-block rounded bg-warning px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-warning-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-warning-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
                 Наши работы
             </button>
-            <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
-                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
-                Связаться с нами
+            <button data-twe-ripple-init data-twe-ripple-color="light"
+                class="inline-block rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+                Оставить заявку
             </button>
                 </div>
             </div>
@@ -315,19 +328,19 @@
                 data-twe-carousel-item style="backface-visibility: hidden">
                 <img src="/img/electric2.jpg" class="block w-full"
                     alt="..." />
-                <div class="p-4 bg-white absolute hidden py-5 text-left text-black md:block" style="left: 15%; top: 30%;">
+                <div class="p-4 bg-white rounded-lg absolute hidden py-5 text-left text-black md:block" style="left: 15%; top: 30%;">
                     <h1 class="text-5xl mb-4">Georgian <br> Electric <br> Group</h5>
                     <h2 class="text-2xl mb-4">
                         Электромонтажные работы в Батуми с 12-летним опытом: <br> надежно, качественно,
                 профессионально
                     </h2>
                     <button type="button"
-                class="inline-block rounded bg-warning px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-warning-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-warning-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+                class="inline-block rounded bg-warning px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-warning-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-warning-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
                 Наши работы
             </button>
-            <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
-                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
-                Связаться с нами
+            <button data-twe-ripple-init data-twe-ripple-color="light"
+                class="inline-block rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+                Оставить заявку
             </button>
             </div>
         </div>
@@ -384,8 +397,8 @@
                 class="inline-block rounded bg-warning px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-warning-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-warning-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
                 Наши работы
             </button>
-            <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
-                class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
+            <button data-twe-ripple-init data-twe-ripple-color="light"
+                class="inline-block rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
                 Связаться с нами
             </button>
         </div> -->
@@ -501,7 +514,6 @@
 
 
 
-        <h2>Виды работ</h2>
         <div class="flex">
 
 
@@ -786,106 +798,7 @@
         </div>
 
 
-
-
-
-
-
-
-
-    </section>
-
-
-
-
-
-
-    <section class="benefits">
-        <div class="p-8 mt-10 bg-yellow-500 hero container mx-auto text-black items-center ">
-            <h3 class="text-4xl mb-8">Преимущества</h3>
-            <!-- <h4 class="mb-8">Быстро, качественно, с гарантией на все виды работ. Бесплатная диагностика при любом ремонте.</h4> -->
-            <div class="py-4 advantages flex justify-around">
-                <div class="advantages_qitem flex flex-col items-center gap-4">
-                    <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/cog.svg" alt="#"></div>
-                    <div class="advantage_item__name">
-                        <h4>БОЛЬШОЙ ОПЫТ</h4>
-                    </div>
-                    <div class="advantage_item__description text-center">Мы тщательно отбираем специалистов, т.к.
-                        дорожим своей
-                        репутацией</div>
-                </div>
-                <div class="advantages_item  flex flex-col items-center  gap-4">
-                    <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/warranty.svg" alt="#">
-                    </div>
-                    <div class="advantage_item__name">
-                        <h4>БЕЗОПАСНОСТЬ</h4>
-                    </div>
-                    <div class="advantage_item__description text-center">Как и любая ответственная за свою работу
-                        компания, мы даем
-                        гарантию безопасности систем, установленных нами</div>
-                </div>
-                <div class="advantages_item  flex flex-col items-center  gap-4">
-                    <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/quality.svg" alt="#">
-                    </div>
-                    <div class="advantage_item__name">
-                        <h4>КАЧЕСТВО</h4>
-                    </div>
-                    <div class="advantage_item__description text-center">Мы всегда соблюдаем обозначенные сроки, и не
-                        заставляем людей ждать</div>
-                </div>
-                <div class="advantages_item  flex flex-col items-center  gap-4">
-                    <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/effectiveness.svg"
-                            alt="#"></div>
-                    <div class="advantage_item__name">
-                        <h4>НАДЕЖНОСТЬ</h4>
-                    </div>
-                    <div class="advantage_item__description text-center">Мы ручаемся за то, что установленные нами
-                        системы будут служить вам верой и правдой весь срок эксплуатации
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="py-4 container mx-auto flex justify-around">
-            <div class="advantages_item flex flex-col items-center gap-4">
-                <div class="advantage_item__pic"><img src="/img/oneblock1.png" alt="#"></div>
-                <div class="advantage_item__name">
-                    <h4>БОЛЬШОЙ ОПЫТ</h4>
-                </div>
-                <div class="advantage_item__description text-center">Стоимость выезда и<br>консультации специалиста
-                </div>
-            </div>
-            <div class="advantages_item  flex flex-col items-center  gap-4">
-                <div class="advantage_item__pic"><img src="/img/oneblock2.png" alt="#">
-                </div>
-                <div class="advantage_item__name">
-                    <h4>БЕЗОПАСНОСТЬ</h4>
-                </div>
-                <div class="advantage_item__description text-center">Стоимость демонтажа<br>старой проводки</div>
-            </div>
-            <div class="advantages_item  flex flex-col items-center  gap-4">
-                <div class="advantage_item__pic"><img src="/img/oneblock3.png" alt="#">
-                </div>
-                <div class="advantage_item__name">
-                    <h4>КАЧЕСТВО</h4>
-                </div>
-                <div class="advantage_item__description text-center">Стоимость проекта<br>электрики</div>
-            </div>
-            <div class="advantages_item  flex flex-col items-center  gap-4">
-                <div class="advantage_item__pic"><img src="/img/oneblock4.png" alt="#"></div>
-                <div class="advantage_item__name">
-                    <h4>НАДЕЖНОСТЬ</h4>
-                </div>
-                <div class="advantage_item__description text-center">Минимальная стоимость<br>электромонтажа квартиры
-                </div>
-            </div>
-        </div>
-
-
-
-        <ul class="jobs py-4 flex flex-wrap gap-1 container mx-auto justify-center">
+        <ul class="jobs py-8 flex flex-wrap gap-1 container mx-auto justify-center">
             <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/elektroprovodka/">
                     Монтаж электропроводки </a></li>
             <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/perenos-rozetok/">
@@ -947,13 +860,127 @@
 
 
 
-        <div class="py-8 container mx-auto flex flex-col flex-wrap basis-full  justify-around ">
-            <div class="flex justify-between">
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+    <section class="benefits ">
+        <div class="bg-yellow-500">
+        <div class="p-8 my-12 hero container mx-auto text-black items-center">
+            <h3 class="text-4xl mb-8">Преимущества</h3>
+            <!-- <h4 class="mb-8">Быстро, качественно, с гарантией на все виды работ. Бесплатная диагностика при любом ремонте.</h4> -->
+            <div class="py-4 advantages flex justify-around">
+                <div class="advantages_qitem flex flex-col items-center gap-4">
+                    <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/cog.svg" alt="#"></div>
+                    <div class="advantage_item__name">
+                        <h4>БОЛЬШОЙ ОПЫТ</h4>
+                    </div>
+                    <div class="advantage_item__description text-center">Мы тщательно отбираем специалистов, т.к.
+                        дорожим своей
+                        репутацией</div>
+                </div>
+                <div class="advantages_item  flex flex-col items-center  gap-4">
+                    <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/warranty.svg" alt="#">
+                    </div>
+                    <div class="advantage_item__name">
+                        <h4>БЕЗОПАСНОСТЬ</h4>
+                    </div>
+                    <div class="advantage_item__description text-center">Как и любая ответственная за свою работу
+                        компания, мы даем
+                        гарантию безопасности систем, установленных нами</div>
+                </div>
+                <div class="advantages_item  flex flex-col items-center  gap-4">
+                    <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/quality.svg" alt="#">
+                    </div>
+                    <div class="advantage_item__name">
+                        <h4>КАЧЕСТВО</h4>
+                    </div>
+                    <div class="advantage_item__description text-center">Мы всегда соблюдаем обозначенные сроки, и не
+                        заставляем людей ждать</div>
+                </div>
+                <div class="advantages_item  flex flex-col items-center  gap-4">
+                    <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/effectiveness.svg"
+                            alt="#"></div>
+                    <div class="advantage_item__name">
+                        <h4>НАДЕЖНОСТЬ</h4>
+                    </div>
+                    <div class="advantage_item__description text-center">Мы ручаемся за то, что установленные нами
+                        системы будут служить вам верой и правдой весь срок эксплуатации
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="py-8 my-12 container mx-auto flex justify-around">
+            <div class="advantages_item flex flex-col items-center gap-4">
+                <div class="advantage_item__name">
+                    <h4>БОЛЬШОЙ ОПЫТ</h4>
+                </div>
+                <div class="advantage_item__pic"><img src="/img/1oneblock1.png" alt="#"></div>
+                <div class="advantage_item__name">
+                    <h4 class="text-3xl">0 ₾</h4>
+                </div>
+                <div class="advantage_item__description text-center">Стоимость выезда и<br>консультации специалиста
+                </div>
+            </div>
+            <div class="advantages_item  flex flex-col items-center  gap-4">
+                <div class="advantage_item__name">
+                    <h4>БЕЗОПАСНОСТЬ</h4>
+                </div>
+                <div class="advantage_item__pic"><img src="/img/1oneblock2.png" alt="#">
+                </div>
+                <div class="advantage_item__name">
+                    <h4 class="text-3xl">0 ₾</h4>
+                </div>
+                <div class="advantage_item__description text-center">Стоимость демонтажа<br>старой проводки</div>
+            </div>
+            <div class="advantages_item  flex flex-col items-center  gap-4">
+                <div class="advantage_item__name">
+                    <h4>КАЧЕСТВО</h4>
+                </div>
+                <div class="advantage_item__pic"><img src="/img/1oneblock3.png" alt="#">
+                </div>
+                <div class="advantage_item__name">
+                    <h4 class="text-3xl">0 ₾</h4>
+                </div>
+                <div class="advantage_item__description text-center">Стоимость проекта<br>электрики</div>
+            </div>
+            <div class="advantages_item  flex flex-col items-center  gap-4">
+                <div class="advantage_item__name">
+                    <h4>НАДЕЖНОСТЬ</h4>
+                </div>
+                <div class="advantage_item__pic"><img src="/img/1oneblock4.png" alt="#"></div>
+                <div class="advantage_item__name">
+                    <h4 class="text-3xl">450 ₾</h4>
+                </div>
+                <div class="advantage_item__description text-center">Минимальная стоимость<br>электромонтажа квартиры
+                </div>
+            </div>
+        </div>
+
+
+
+       
+
+        <div class="p-8 my-12 container mx-auto bg-yellow-500 flex gap-6 flex-col flex-wrap basis-full  justify-around text-black">
+            <h3 class="text-center text-3xl font-bold ">Схема работы</h3>
+            <div class="flex justify-between mx-[70px]">
 
 
                 <div class="advantages_item flex flex-col items-center gap-4">
                     <div class="advantage_item__pic">
-                        <img class="noun_477031_cc" src="/img/noun_477031_cc.png" alt="#" width="52" height="52">
+                        <img class="noun_477031_cc" src="/img/1noun_477031_cc.png" alt="#" width="52" height="52">
                     </div>
                     <div class="advantage_item__name">
                     </div>
@@ -961,7 +988,7 @@
                 </div>
                 <div class="advantages_item  flex flex-col items-center  gap-4">
                     <div class="advantage_item__pic">
-                        <img class="noun_579451_cc" src="img/noun_579451_cc.png" alt="#" width="53" height="53">
+                        <img class="noun_579451_cc" src="img/1noun_579451_cc.png" alt="#" width="53" height="53">
                     </div>
                     <div class="advantage_item__name">
                     </div>
@@ -969,7 +996,7 @@
                 </div>
                 <div class="advantages_item  flex flex-col items-center  gap-4">
                     <div class="advantage_item__pic">
-                        <img class="noun_569665_cc" src="/img/noun_569665_cc.png" alt="#" width="54" height="55">
+                        <img class="noun_569665_cc" src="/img/1noun_569665_cc.png" alt="#" width="54" height="55">
                     </div>
                     <div class="advantage_item__name">
                     </div>
@@ -978,7 +1005,7 @@
                 </div>
                 <div class="advantages_item  flex flex-col items-center  gap-4">
                     <div class="advantage_item__pic">
-                        <img class="monetka" src="/img/noun_192421_cc.png" alt="#">
+                        <img class="monetka" src="/img/1noun_192421_cc.png" alt="#">
                     </div>
                     <div class="advantage_item__name">
                     </div>
@@ -988,10 +1015,10 @@
             </div>
 
             <div class="flex justify-around">
-                <img src="img/lineika.png" class="block w-full mx-[70px]" alt="#">
+                <img src="img/1lineika.png" class="block w-full h-[30px] mx-[70px]" alt="#">
             </div>
 
-            <div class="flex justify-between">
+            <div class="flex justify-between mx-[70px]">
                 <div class="advantages_item flex flex-col items-center gap-4">
                     <div class=" text-center">1 этап</div>
                 </div>
@@ -1021,10 +1048,8 @@
 
 
 
-    <section id="appointment-form" class="appointment-form">
-        <div class="container column">
-        <h2>Запись на сервис</h2>
-        <h4>Заполните форму и наши специалисты свяжутся с вами сегодня</h4>
+    <section id="appointment-form" class="appointment-form p-8 my-12 bg-[#003366] hero mx-auto text-black items-center ">
+        
         
 
 
@@ -1032,68 +1057,107 @@
 
 
 
-<form id="contactForm" class="mx-auto max-w-md mt-8">
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
-      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your name">
-    </div>
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
-      <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email">
-    </div>
-    <div class="mb-6">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
-      <textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message"></textarea>
-    </div>
-    <div class="flex items-center justify-between">
-      <button id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-        Send
-      </button>
-    </div>
-  </form>
+        <div class="bg-white p-8 rounded-lg shadow-2xl max-w-xl w-full mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Вызвать электрика</h2>
+            <h4 class="text-md font-medium text-gray-800 mb-6 text-center">Мы перезвоним вам в течении 30 минут и уладим все технические и организационные вопросы</h4>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+            <form id="contactForm" class="space-y-4">
+              <div class="my-4">
+                <!-- <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label> -->
+                <input class="appearance-none border border-gray-300 rounded w-full py-2 px-3 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" type="text" placeholder="Имя" required>
+              </div>
+              <div>
+                <!-- <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label> -->
+                <input class="appearance-none border border-gray-300 rounded w-full py-2 px-3 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" type="tel" placeholder="Телефон" required>
+              </div>
+              <!-- <div>
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                <textarea class="appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 h-32" id="message" placeholder="Your message" required></textarea>
+              </div> -->
+              <div class="flex items-center justify-between">
+                <button id="submit" class="bg-[#003366] hover:bg-yellow-600 hover:text-black text-white font-bold py-2 px-4 my-1 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                  Отправить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+          
+          
+          
+          
+          
 
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      // Отправляем данные формы в Telegram бота
-      sendTelegramMessage(name, email, message);
-      
-      // Очищаем форму
-      this.reset();
-    });
-
-    function sendTelegramMessage(name, email, message) {
-      const apiToken = "6091232201:AAFeK7pA7uJID96rEkiMmH649rdLvE4Pyo0";
-      const chatId = "@salskdjhhakgjfhakjhwkdjbmzxjchzb";
-      const text = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-      const urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`;
-
-      fetch(urlString)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then(data => console.log(data))
-        .catch(error => console.error('There was a problem with your fetch operation:', error));
-    }
-  </script>
         
-    </div>
+    
 </section>
 
 
 
 
 
-    <script type="script" src="/script.js"></script>
+
+
+<section id="footer_form" class="footer-form p-8 my-12 bg-[#003366] hero mx-auto text-black items-center ">
+        
+        
+
+
+
+
+
+
+    <div class="bg-white p-8 rounded-lg shadow-2xl container w-full mx-auto">
+        <h2 class="text-5xl font-bold text-gray-800 mb-6 text-center">Остались вопросы?</h2>
+        <h4 class="text-2xl font-medium text-gray-800 mb-6 text-center">Оставьте удобные вам контактные данные, и мы поможем!</h4>
+
+        <form id="footerForm" class="space-y-4">
+            <div class="flex justify-between gap-4">
+                <div class="my-2">
+                    <input
+                        class="appearance-none border border-black  block max-w-[600px] py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        id="footer_name" type="text" placeholder="Имя" required>
+                </div>
+                <div class="my-2">
+                    <input
+                        class="appearance-none border border-black  block max-w-[600px] w-full py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        id="footer_tel" type="tel" placeholder="Телефон">
+                </div>
+            
+                <div class="my-2">
+                    <input
+                        class="appearance-none border border-black  block max-w-[600px] w-full py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        id="footer_email" type="tel" placeholder="E-mail">
+                </div>
+            </div>
+          
+
+          <div>
+            <textarea class="appearance-none border border-black  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 h-32" id="footer_message" placeholder="Your message" required></textarea>
+          </div>
+          <div class="flex items-center justify-between">
+            <button id="submit" class="bg-[#003366] hover:bg-yellow-600 hover:text-black text-white font-bold py-2 px-4 my-1 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+              Отправить заявку
+            </button>
+          </div>
+        </form>
+      </div>
+      
+      
+      
+      
+      
+
+    
+
+</section>
+
+
+
+
+
+    
     <script type="text/javascript" src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
 </body>
 
 </html>
