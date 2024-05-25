@@ -9,287 +9,134 @@
 </head>
 
 <body>
-  <!-- <div class="container mx-auto">
-        
-        <header class="bg-blue-500 py-4">
-            <div class="container mx-auto">
-                <h1 class="text-white text-3xl font-bold text-center">Georgian Electric Group</h1>
-            </div>
-        </header>
 
-        
-        <main class="py-4">
-            <div class="container mx-auto">
-                <p class="text-xl font-semibold text-gray-800">Добро пожаловать в Georgian Electric Group!</p>
-                <p class="text-gray-700">Мы имеем более 20 лет опыта в электромонтажных работах в Батуми.</p>
-            </div>
+  <div class="header-wrapper p-4 bg-white fixed top-0 left-[50%] translate-x-[-50%] z-50 w-full">
 
-            <div id="accordionExample">
-                <div
-                  class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                  <h2 class="mb-0" id="headingOne">
-                    <button
-                      class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
-                      type="button"
-                      data-twe-collapse-init
-                      data-twe-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne">
-                      Accordion Item #1
-                      <span
-                        class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="!visible"
-                    data-twe-collapse-item
-                    data-twe-collapse-show
-                    aria-labelledby="headingOne"
-                    data-twe-parent="#accordionExample">
-                    <div class="px-5 py-4">
-                      <strong>This is the first item's accordion body.</strong> It is
-                      shown by default, until the collapse plugin adds the appropriate
-                      classes that we use to style each element. These classes control
-                      the overall appearance, as well as the showing and hiding via CSS
-                      transitions. You can modify any of this with custom CSS or
-                      overriding our default variables. It's also worth noting that just
-                      about any HTML can go within the <code>.accordion-body</code>,
-                      though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                  <h2 class="mb-0" id="headingTwo">
-                    <button
-                      class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
-                      type="button"
-                      data-twe-collapse-init
-                      data-twe-collapse-collapsed
-                      data-twe-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo">
-                      Accordion Item #2
-                      <span
-                        class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6 ">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="!visible hidden"
-                    data-twe-collapse-item
-                    aria-labelledby="headingTwo"
-                    data-twe-parent="#accordionExample">
-                    <div class="px-5 py-4">
-                      <strong>This is the second item's accordion body.</strong> It is
-                      hidden by default, until the collapse plugin adds the appropriate
-                      classes that we use to style each element. These classes control
-                      the overall appearance, as well as the showing and hiding via CSS
-                      transitions. You can modify any of this with custom CSS or
-                      overriding our default variables. It's also worth noting that just
-                      about any HTML can go within the <code>.accordion-body</code>,
-                      though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                  <h2 class="accordion-header mb-0" id="headingThree">
-                    <button
-                      class="data-[twe-collapse-collapsed] group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none data-[twe-collapse-collapsed]:rounded-b-lg dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary  dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
-                      type="button"
-                      data-twe-collapse-init
-                      data-twe-collapse-collapsed
-                      data-twe-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree">
-                      Accordion Item #3
-                      <span
-                        class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="!visible hidden"
-                    data-twe-collapse-item
-                    aria-labelledby="headingThree"
-                    data-twe-parent="#accordionExample">
-                    <div class="px-5 py-4">
-                      <strong>This is the third item's accordion body.</strong> It is
-                      hidden by default, until the collapse plugin adds the appropriate
-                      classes that we use to style each element. These classes control
-                      the overall appearance, as well as the showing and hiding via CSS
-                      transitions. You can modify any of this with custom CSS or
-                      overriding our default variables. It's also worth noting that just
-                      about any HTML can go within the <code>.accordion-body</code>,
-                      though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <header class="flex container mx-auto text-black bg-white w-[1920px] justify-between items-center">
+      <div class="header-logo text-center"><a href="index.html"><img class="max-w-[100px] h-auto" src="/img/logo.png"
+            alt=""> </a></div>
+      <nav class="w-[50%]">
+        <ul class="flex flex-row justify-between">
+          <li><a
+              class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+              href="about.html">О нас</a></li>
+          <li class="font-medium"><a
+              class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+              href="services.html">Услуги</a></li>
+          <li><a
+              class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+              href="warranty.html">Гарантия</a></li>
+          <li><a
+              class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+              href="blog.html">Блог</a></li>
+          <li><a
+              class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+              href="vacancies.html">Вакансии</a></li>
+          <li><a
+              class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+              href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-contacts flex flex-col gap-2">
+
+        <div>Пн.-Вс. <span class="font-bold">с 8.00 до 23.00</span></div>
+        <div class="tel">
+          <a href="tel:+9955518282" class="contact-phone font-bold">+995 551-82-82</a>
+        </div>
+
+        <div class="header-socials flex gap-2">
+          <a href="#"><img class="w-[20px] max-h-[20px]" src="img/insta.svg" alt="#"></a>
+          <a href="#"><img class="w-[20px]" src="img/tt.svg" alt="#"></a>
+          <a href="#"><img class="w-[20px]" src="img/yt.svg" alt="#"></a>
+          <a href="#"><img class="w-[20px]" src="img/fb.svg" alt="#"></a>
+          <a href="#"><img class="w-[20px]" src="img/tg.svg" alt="#"></a>
+          <a href="#"><img class="w-[20px]" src="img/wa.svg" alt="#"></a>
+
+        </div>
 
 
-        </main>
+      </div>
+      <div class="header-cta">
+        <button
+          class="flex mb-4 items-center rounded bg-[#003366] hover:text-black hover:bg-yellow-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
+          data-twe-ripple-color="light">
+          Позвонить
+        </button>
+        <button
+          class="flex items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:text-black hover:bg-yellow-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+          id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
+          data-twe-ripple-color="light">
+          Оставить заявку
+        </button>
+      </div>
+      <div class="lang-switch">
+        <div class="relative" data-twe-dropdown-ref>
+          <button
+            class="flex items-center rounded bg-yellow-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal  shadow-primary-3 transition duration-150 ease-in-out hover:bg-[#003366] hover:text-white hover:shadow-primary-2 focus:bg-[#003366] focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-[#003366] active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
+            data-twe-ripple-color="light">
+            RU
+            <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+          </button>
+          <ul
+            class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+            aria-labelledby="dropdownMenuButton1" data-twe-dropdown-menu-ref>
+            <li>
+              <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                href="#" data-twe-dropdown-item-ref>ENG</a>
+            </li>
+            <li>
+              <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                href="#" data-twe-dropdown-item-ref>KA</a>
+            </li>
+            <li>
+              <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                href="#" data-twe-dropdown-item-ref>TR</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        
-        <footer class="bg-gray-900 py-4">
-            <div class="container mx-auto">
-                <p class="text-white text-center">© 2024 Georgian Electric Group</p>
-            </div>
-        </footer>
-    </div> -->
-
-
-    <div class="header-wrapper p-4 bg-white fixed top-0 left-[50%] translate-x-[-50%] z-50 w-full">
-    
-      <header class="flex container mx-auto text-black bg-white w-[1920px] justify-between items-center">
-          <div class="header-logo text-center"><a href="index.html"><img class="max-w-[100px] h-auto" src="/img/logo.png"
-                      alt=""> </a></div>
-          <nav class="w-[50%]">
-              <ul class="flex flex-row justify-between">
-                  <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                          href="about.html">О нас</a></li>
-                  <li class="font-medium"><a
-                          class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                          href="services.html">Услуги</a></li>
-                  <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                          href="warranty.html">Гарантия</a></li>
-                  <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                          href="blog.html">Блог</a></li>
-                  <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                          href="vacancies.html">Вакансии</a></li>
-                  <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                          href="contacts.html">Контакты</a></li>
-              </ul>
-          </nav>
-          <div class="header-contacts flex flex-col gap-2">
-  
-              <div>Пн.-Вс. <span class="font-bold">с 8.00 до 23.00</span></div>
-              <div class="tel">
-                  <a href="tel:+9955518282" class="contact-phone font-bold">+995 551-82-82</a>
-              </div>
-  
-              <div class="header-socials flex gap-2">
-                  <a href="#"><img class="w-[20px] max-h-[20px]" src="img/insta.svg" alt="#"></a>
-                  <a href="#"><img class="w-[20px]" src="img/tt.svg" alt="#"></a>
-                  <a href="#"><img class="w-[20px]" src="img/yt.svg" alt="#"></a>
-                  <a href="#"><img class="w-[20px]" src="img/fb.svg" alt="#"></a>
-                  <a href="#"><img class="w-[20px]" src="img/tg.svg" alt="#"></a>
-                  <a href="#"><img class="w-[20px]" src="img/wa.svg" alt="#"></a>
-  
-              </div>
-  
-  
-          </div>
-          <div class="header-cta">
-              <button
-                  class="flex mb-4 items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-                  id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
-                  data-twe-ripple-color="light">
-                  Позвонить
-              </button>
-              <button
-                  class="flex items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-                  id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
-                  data-twe-ripple-color="light">
-                  Оставить заявку
-              </button>
-          </div>
-          <div class="lang-switch">
-              <div class="relative" data-twe-dropdown-ref>
-                  <button
-                      class="flex items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-                      id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
-                      data-twe-ripple-color="light">
-                      RU
-                      <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                              <path fill-rule="evenodd"
-                                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                  clip-rule="evenodd" />
-                          </svg>
-                      </span>
-                  </button>
-                  <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
-                      aria-labelledby="dropdownMenuButton1" data-twe-dropdown-menu-ref>
-                      <li>
-                          <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                              href="#" data-twe-dropdown-item-ref>ENG</a>
-                      </li>
-                      <li>
-                          <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                              href="#" data-twe-dropdown-item-ref>GE</a>
-                      </li>
-                      <li>
-                          <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                              href="#" data-twe-dropdown-item-ref>TR</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-  
-      </header>
+    </header>
   </div>
 
-  <section class="services container mx-auto mt-[150px] mb-20 text-black">
+  <section class="services container mx-auto mt-[150px]  mb-20 text-black">
     <div class="w-[60%]">
-      <h1 class="about_article__title text-3xl mb-20 font-semibold">НАШИ УСЛУГИ И ЦЕНЫ НА <br> ЭЛЕКТРО-МОНТАЖНЫЕ РАБОТЫ</h1>
+      <h1 class="about_article__title text-3xl mb-20 font-semibold">НАШИ УСЛУГИ И ЦЕНЫ НА <br> ЭЛЕКТРО-МОНТАЖНЫЕ РАБОТЫ
+      </h1>
 
       <!-- <h2 class="about_article__subtitle text-xl font-semibold mb-8 ">Появились неисправности в электропроводке, розетках или выключателях? <br> Купили новую люстру и необходима помощь по грамотной установке?
       </h2> -->
-      <p class="about_article__text mb-8 text-lg">Специалисты нашей компании при выполнении монтажных работ руководствуются конструктивными особенностями жилья: в зависимости от материала, из которого возведен дом в работе могут использоваться разные способы замены старой или прокладки новой электропроводки.
+      <p class="about_article__text mb-8 text-lg">Специалисты нашей компании при выполнении монтажных работ
+        руководствуются конструктивными особенностями жилья: в зависимости от материала, из которого возведен дом в
+        работе могут использоваться разные способы замены старой или прокладки новой электропроводки.
       </p>
-      <p class="about_article__text mb-8 text-lg">Перед монтажом электропроводки в доме электрики определяют суммарную мощность всех бытовых электроприборов, а также учитывают возможное увеличение пиковой нагрузки.
+      <p class="about_article__text mb-8 text-lg">Перед монтажом электропроводки в доме электрики определяют суммарную
+        мощность всех бытовых электроприборов, а также учитывают возможное увеличение пиковой нагрузки.
       </p>
-      <p class="about_article__text mb-8 text-lg">После всех расчетов специалисты подбирают все необходимые материалы и определяют точную стоимость электромонтажных работ, цену всех необходимых аксессуаров: провода оптимального сечения, розетки и выключатели, автоматические устройства отключения электроэнергии и распределительные коробки.
+      <p class="about_article__text mb-8 text-lg">После всех расчетов специалисты подбирают все необходимые материалы и
+        определяют точную стоимость электромонтажных работ, цену всех необходимых аксессуаров: провода оптимального
+        сечения, розетки и выключатели, автоматические устройства отключения электроэнергии и распределительные коробки.
       </p>
     </div>
   </section>
 
-  <section class="services  my-12 py-32 text-black bg-gray-200">
+  <section class="services py-32 text-black bg-gray-200 mt-[150px]">
     <div class="w-[60%] container mx-auto">
       <h1 class="about_article__title text-3xl mb-20 font-semibold">НАШИ ЦЕНЫ НА ОСНОВНЫЕ РАБОТЫ</h1>
 
       <!-- <h2 class="about_article__subtitle text-xl font-semibold mb-8 ">Появились неисправности в электропроводке, розетках или выключателях? <br> Купили новую люстру и необходима помощь по грамотной установке?
       </h2> -->
-      <p class="about_article__text mb-8 text-lg w-[60%]">В зависимости от сложности выполняемых работ варьируется итоговая стоимость услуг нашей компании. Кроме этого, на цену новой электропроводки могут влиять следующие факторы:
+      <p class="about_article__text mb-8 text-lg w-[60%]">В зависимости от сложности выполняемых работ варьируется
+        итоговая стоимость услуг нашей компании. Кроме этого, на цену новой электропроводки могут влиять следующие
+        факторы:
       </p>
       <ul class="list-disc p-8">
         <li>вид электропроводки;</li>
@@ -307,11 +154,11 @@
 
 
   <section class="prices">
-  
-  
-  
-    <div class="price-item py-12">
-  
+
+
+
+    <div class="price-item pb-12 scroll-mt-[138px]" id="sockets">
+
       <div class="price-header__wrapper bg-gray-100 py-20">
         <div class="price-header container mx-auto ">
           <h2 class="price-header__name text-3xl text-black mb-20">
@@ -328,13 +175,13 @@
           </div>
         </div>
       </div>
-  
-  
-  
+
+
+
       <div class="price-body container mx-auto p-20">
         <div class="price-item__table">
-  
-  
+
+
           <div class="table-header border-b-[1px]  border-black mb-12 p-4">
             <div class="flex justify-between">
               <div class="service-name w-4/5">Наименование</div>
@@ -344,8 +191,8 @@
               </div>
             </div>
           </div>
-  
-  
+
+
           <div class="table-body">
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Замена розетки/выключателя внутр. (демонтаж\монтаж)</div>
@@ -355,21 +202,24 @@
               </div>
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
-              <div class="service-name w-4/5">Демонтаж электро установочного изделия (розетка, выключатель, распаячная коробка)</div>
+              <div class="service-name w-4/5">Демонтаж электро установочного изделия (розетка, выключатель, распаячная
+                коробка)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">шт</div>
                 <div class="price text-left">4</div>
               </div>
             </div>
             <div class="table__row flex justify-between p-4">
-              <div class="service-name w-4/5">Высверливание углубления под установочную коробку (подразетник) в гипсокартоне</div>
+              <div class="service-name w-4/5">Высверливание углубления под установочную коробку (подразетник) в
+                гипсокартоне</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">шт</div>
                 <div class="price">4</div>
               </div>
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
-              <div class="service-name w-4/5">Высверливание углубления под установочную коробку (подразетник) в бетоне</div>
+              <div class="service-name w-4/5">Высверливание углубления под установочную коробку (подразетник) в бетоне
+              </div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">шт</div>
                 <div class="price text-left">12</div>
@@ -445,20 +295,20 @@
                 <div class="price text-left">2</div>
               </div>
             </div>
-  
-  
-  
-  
+
+
+
+
           </div>
         </div>
       </div>
     </div>
-  
-    
 
 
-    <div class="price-item py-12">
-  
+
+
+    <div class="price-item py-12 scroll-mt-[138px]" id="lighting">
+
       <div class="price-header__wrapper bg-gray-100 py-20">
         <div class="price-header container mx-auto ">
           <h2 class="price-header__name text-3xl text-black mb-20">
@@ -474,13 +324,13 @@
           </div>
         </div>
       </div>
-  
-  
-  
+
+
+
       <div class="price-body container mx-auto p-20">
         <div class="price-item__table">
-  
-  
+
+
           <div class="table-header border-b-[1px]  border-black mb-12 p-4">
             <div class="flex justify-between">
               <div class="service-name w-4/5">Наименование</div>
@@ -490,8 +340,8 @@
               </div>
             </div>
           </div>
-  
-  
+
+
           <div class="table-body">
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Демонтаж люстры, светильника, вентилятора (с сохранением изделия)</div>
@@ -626,10 +476,10 @@
                 <div class="price text-left">6</div>
               </div>
             </div>
-  
-  
-  
-  
+
+
+
+
           </div>
         </div>
       </div>
@@ -637,8 +487,8 @@
 
 
 
-    <div class="price-item py-12">
-  
+    <div class="price-item py-12 scroll-mt-[138px]" id="protection">
+
       <div class="price-header__wrapper bg-gray-100 py-20">
         <div class="price-header container mx-auto ">
           <h2 class="price-header__name text-3xl text-black mb-20">
@@ -649,18 +499,19 @@
               <img src="/img/pp3.jpg" alt="">
             </div>
             <p class="descr__text text-xl w-1/3">
-              Монтаж защитных устройств, монтаж устройств защитного заземления. Подключение стабилизатора, установка бокса
+              Монтаж защитных устройств, монтаж устройств защитного заземления. Подключение стабилизатора, установка
+              бокса
             </p>
           </div>
         </div>
       </div>
-  
-  
-  
+
+
+
       <div class="price-body container mx-auto p-20">
         <div class="price-item__table">
-  
-  
+
+
           <div class="table-header border-b-[1px]  border-black mb-12 p-4">
             <div class="flex justify-between">
               <div class="service-name w-4/5">Наименование</div>
@@ -670,8 +521,8 @@
               </div>
             </div>
           </div>
-  
-  
+
+
           <div class="table-body">
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Подключение стабилизатора 1 фазного</div>
@@ -766,7 +617,7 @@
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
               <div class="service-name w-4/5">Установка бокса, встраиваемого свыше 54 модуля, врезка в
-                    гипсокартон</div>
+                гипсокартон</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">шт</div>
                 <div class="price text-left">128</div>
@@ -788,7 +639,7 @@
             </div>
             <div class="table__row flex justify-between  p-4">
               <div class="service-name w-4/5">Установка авт.выключателя однополюсного от 6 до 63 А на DIN-
-                    рейку</div>
+                рейку</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">шт</div>
                 <div class="price text-left">8</div>
@@ -796,7 +647,7 @@
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
               <div class="service-name w-4/5">Установка авт.выключателя двухполюсного от 6 до 63 А на DIN-
-                    рейку</div>
+                рейку</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">м.пог.</div>
                 <div class="price">12</div>
@@ -823,10 +674,10 @@
                 <div class="price text-left">20</div>
               </div>
             </div>
-  
-  
-  
-  
+
+
+
+
           </div>
         </div>
       </div>
@@ -835,8 +686,8 @@
 
 
 
-    <div class="price-item py-12">
-  
+    <div class="price-item py-12 scroll-mt-[138px]" id="wiring">
+
       <div class="price-header__wrapper bg-gray-100 py-20">
         <div class="price-header container mx-auto ">
           <h2 class="price-header__name text-3xl text-black mb-20">
@@ -852,13 +703,13 @@
           </div>
         </div>
       </div>
-  
-  
-  
+
+
+
       <div class="price-body container mx-auto p-20">
         <div class="price-item__table">
-  
-  
+
+
           <div class="table-header border-b-[1px]  border-black mb-12 p-4">
             <div class="flex justify-between">
               <div class="service-name w-4/5">Наименование</div>
@@ -868,8 +719,8 @@
               </div>
             </div>
           </div>
-  
-  
+
+
           <div class="table-body">
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Демонтаж скрытой проводки (до 16мм)</div>
@@ -901,7 +752,7 @@
             </div>
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Устройство штроб размером 20х20 мм в кирпиче (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price">12</div>
@@ -909,7 +760,7 @@
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
               <div class="service-name w-4/5">Устройство штроб размером 20х20 мм в бетоне (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price text-left">14</div>
@@ -917,7 +768,7 @@
             </div>
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Устройство штроб размером 40х40 мм в кирпиче (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price">14</div>
@@ -925,7 +776,7 @@
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
               <div class="service-name w-4/5">Устройство штроб размером 40х40 мм в бетоне (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price text-left">16</div>
@@ -933,7 +784,7 @@
             </div>
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Устройство штроб размером 70х70 мм. в кирпиче (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price">16</div>
@@ -941,7 +792,7 @@
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
               <div class="service-name w-4/5">Устройство штроб размером 70х70 мм в бетоне (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price text-left">36</div>
@@ -949,7 +800,7 @@
             </div>
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Устройство штроб размером 100х100 мм в кирпиче (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price">30</div>
@@ -957,7 +808,7 @@
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
               <div class="service-name w-4/5">Устройство штроб размером 100х100 мм в бетоне (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price text-left">34</div>
@@ -965,7 +816,7 @@
             </div>
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">йство штроб в потолке размером 20х20 мм (с последующей
-                    заделкой без оштукатуривания)</div>
+                заделкой без оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price">14</div>
@@ -973,7 +824,7 @@
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
               <div class="service-name w-4/5">Устройство штроб в гипсолите (с последующей заделкой без
-                    оштукатуривания)</div>
+                оштукатуривания)</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">пог.м</div>
                 <div class="price text-left">4</div>
@@ -981,7 +832,7 @@
             </div>
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Сквозное сверление гипсолитных стен толщиной до 200 мм, диаметром
-                    до 25 мм</div>
+                до 25 мм</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">шт.</div>
                 <div class="price">4</div>
@@ -989,7 +840,7 @@
             </div>
             <div class="table__row flex justify-between bg-gray-200 p-4">
               <div class="service-name w-4/5">Сквозное сверление кирпичных стен толщиной до 200 мм., диаметром
-                    до 25 мм</div>
+                до 25 мм</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">шт.</div>
                 <div class="price text-left">6</div>
@@ -997,7 +848,7 @@
             </div>
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Сквозное сверление бетонных стен толщиной до 200 мм., диаметром
-                    до 25 мм</div>
+                до 25 мм</div>
               <div class="service-specs flex gap-8 w-1/5 justify-between">
                 <div class="qts">шт.</div>
                 <div class="price">8</div>
@@ -1108,11 +959,11 @@
                 <div class="price text-left">18</div>
               </div>
             </div>
-            
-  
-  
-  
-  
+
+
+
+
+
           </div>
         </div>
       </div>
@@ -1122,8 +973,8 @@
 
 
 
-    <div class="price-item py-12">
-  
+    <div class="price-item py-12 scroll-mt-[138px]" id="hhappliances">
+
       <div class="price-header__wrapper bg-gray-100 py-20">
         <div class="price-header container mx-auto ">
           <h2 class="price-header__name text-3xl text-black mb-20">
@@ -1141,13 +992,13 @@
           </div>
         </div>
       </div>
-  
-  
-  
+
+
+
       <div class="price-body container mx-auto p-20">
         <div class="price-item__table">
-  
-  
+
+
           <div class="table-header border-b-[1px]  border-black mb-12 p-4">
             <div class="flex justify-between">
               <div class="service-name w-4/5">Наименование</div>
@@ -1157,8 +1008,8 @@
               </div>
             </div>
           </div>
-  
-  
+
+
           <div class="table-body">
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Электроплиты (Прокладка кабеля и установка розетки в данную
@@ -1303,10 +1154,10 @@
                 <div class="price">60</div>
               </div>
             </div>
-  
-  
-  
-  
+
+
+
+
           </div>
         </div>
       </div>
@@ -1315,8 +1166,8 @@
 
 
 
-    <div class="price-item py-12">
-  
+    <div class="price-item py-12 scroll-mt-[138px]" id="lowcurrent">
+
       <div class="price-header__wrapper bg-gray-100 py-20">
         <div class="price-header container mx-auto ">
           <h2 class="price-header__name text-3xl text-black mb-20">
@@ -1327,18 +1178,19 @@
               <img src="/img/pp6.jpg" alt="">
             </div>
             <p class="descr__text text-xl w-1/3">
-              Подключение домофона, подключение, монтаж видеокамеры, установка и настройка видео регистратора и других слаботочный систем
+              Подключение домофона, подключение, монтаж видеокамеры, установка и настройка видео регистратора и других
+              слаботочный систем
             </p>
           </div>
         </div>
       </div>
-  
-  
-  
+
+
+
       <div class="price-body container mx-auto p-20">
         <div class="price-item__table">
-  
-  
+
+
           <div class="table-header border-b-[1px]  border-black mb-12 p-4">
             <div class="flex justify-between">
               <div class="service-name w-4/5">Наименование</div>
@@ -1348,8 +1200,8 @@
               </div>
             </div>
           </div>
-  
-  
+
+
           <div class="table-body">
             <div class="table__row flex justify-between p-4">
               <div class="service-name w-4/5">Подключение домофона</div>
@@ -1379,24 +1231,24 @@
                 <div class="price text-left">от 120</div>
               </div>
             </div>
-            
-  
-  
-  
-  
+
+
+
+
+
           </div>
         </div>
       </div>
     </div>
-  
-  
-  
+
+
+
   </section>
 
 
-  <section id="footer_form" class="footer-form p-8 my-12 py-12 bg-[#003366] hero mx-auto text-black items-center ">
-      
-      
+  <section id="footer_form" class="footer-form p-8 py-12 bg-[#003366] hero mx-auto text-black items-center ">
+
+
 
 
 
@@ -1404,144 +1256,182 @@
 
 
     <div class="bg-white p-8 rounded-lg shadow-2xl container w-full mx-auto">
-        <h2 class="text-5xl font-bold text-gray-800 mb-6 text-center">Остались вопросы?</h2>
-        <h4 class="text-2xl font-medium text-gray-800 mb-6 text-center">Оставьте удобные вам контактные данные, и мы поможем!</h4>
-  
-        <form id="footerForm" class="space-y-4">
-            <div class="flex justify-between gap-4">
-                <div class="my-2">
-                    <input
-                        class="appearance-none border border-black  block max-w-[600px] py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        id="footer_name" type="text" placeholder="Имя" required>
-                </div>
-                <div class="my-2">
-                    <input
-                        class="appearance-none border border-black  block max-w-[600px] w-full py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        id="footer_tel" type="tel" placeholder="Телефон">
-                </div>
-            
-                <div class="my-2">
-                    <input
-                        class="appearance-none border border-black  block max-w-[600px] w-full py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        id="footer_email" type="tel" placeholder="E-mail">
-                </div>
-            </div>
-          
-  
-          <div>
-            <textarea class="appearance-none border border-black  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 h-32" id="footer_message" placeholder="Your message" required></textarea>
+      <h2 class="text-5xl font-bold text-gray-800 mb-6 text-center">Остались вопросы?</h2>
+      <h4 class="text-2xl font-medium text-gray-800 mb-6 text-center">Оставьте удобные вам контактные данные, и мы
+        поможем!</h4>
+
+      <form id="footerForm" class="space-y-4">
+        <div class="flex justify-between gap-4">
+          <div class="my-2">
+            <input
+              class="appearance-none border border-black  block max-w-[600px] py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="footer_name" type="text" placeholder="Имя" required>
           </div>
-          <div class="flex items-center justify-between">
-            <button id="submit" class="bg-[#003366] hover:bg-yellow-600 hover:text-black text-white font-bold py-2 px-4 my-1 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-              Отправить заявку
-            </button>
+          <div class="my-2">
+            <input
+              class="appearance-none border border-black  block max-w-[600px] w-full py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="footer_tel" type="tel" placeholder="Телефон">
           </div>
-        </form>
-      </div>
-      
-      
-      
-      
-      
-  
-    
-  
+
+          <div class="my-2">
+            <input
+              class="appearance-none border border-black  block max-w-[600px] w-full py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+              id="footer_email" type="tel" placeholder="E-mail">
+          </div>
+        </div>
+
+
+        <div>
+          <textarea
+            class="appearance-none border border-black  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 h-32"
+            id="footer_message" placeholder="Your message" required></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button id="submit"
+            class="bg-[#003366] hover:bg-yellow-300 hover:text-black text-white font-bold py-2 px-4 my-1 w-full rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+            Отправить заявку
+          </button>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
   </section>
 
-  
-  <footer class="footer">
+
+  <footer class="footer mt-12">
 
     <div>
-        <div class="container mx-auto">
-            <div class="flex justify-between">
-                <div class="flex justify-between gap-48">
-                <div class="footer_sitemap">
-                    <div class="footer_sitemap__header font-semibold mb-2 text-[#003366]">
-                        Карта сайта</div>
-                    <div>
-                        <ul>
-                            <li><a href="about.html">О нас</a></li>
-                            <li class="font-medium"><a href="services.html">Услуги</a></li>
-                            <li>Наши партнеры</li>
-                            <li><a href="vacancies.html">Вакансии</a></li>
-                            <li>Мы в соцсетях</li>
-                            <li><a href="contacts.html">Контакты</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer_services">
-                    <div class="footer_services__header font-semibold mb-2 text-[#003366]">
-                        Сервис</div>
-                    <div class="footer_services__body">
-                        <ul>
-                            <li><a href="/ustanovka-rozetok-i-vyklyuchateley" rel="noopener noreferrer">Установка
-                                    розеток</a></li>
-                            <li><a href="/ustanovka-osveshcheniya">Освещение в квартире</a></li>
-                            <li><a href="/montazh-zashchitnykh-ustroystv" rel="noopener noreferrer">Монтаж защиты</a></li>
-                            <li><a href="/elektromontazhnyye-raboty" rel="noopener noreferrer">Монтаж электропроводки</a>
-                            </li>
-                            <li><a href="/podklyucheniye-bytovoy-tekhniki" rel="noopener noreferrer">Подключение техники</a>
-                            </li>
-                            <li><a href="/montazh-slabotochnykh-sistem" rel="noreferrer noopener" target="_blank">Монтаж
-                                    слаботочных систем</a></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-                <div class="footer_contacts">
-                    <div class="footer_contacts__header font-semibold mb-2 text-[#003366]">
-                        Контакты</div>
-                    <div class="footer_contacts__body">
-                        <ul>
-                            <li>
-                                <p>г. Батуми, улица Пушкина, дом Колотушкина, 1488</p>
-                                <p>
-                                  Тел.: <a href="tel:+9955518282" class="contact-phone font-bold underline">+995 551-82-82</a>
-                                </p>
-                                <p class="flex justify-start ">
-                                    <a href="#"><img class="w-[20px] max-h-[20px]" src="img/tg.svg" alt="#"></a>
-                                    <a href="#"><img class="w-[20px] max-h-[20px]" src="img/wa.svg" alt="#"></a>
-                                    <span><a href="tel:+9955518282" class="contact-phone font-bold underline">+995 551-82-82</a></span>
-                                </p>
-                                <p><noindex>E-mail: <a href="mailto:georgianelectricgroup@gmail.ru">georgianelectricgroup@mail.ru</a></noindex></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="flex justify-between gap-48">
+            <div class="footer_sitemap">
+              <div class="footer_sitemap__header font-semibold mb-2 text-[#003366]">
+                Карта сайта</div>
+              <div>
+                <ul class="flex flex-col justify-between">
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="about.html">О нас</a></li>
+                  <li class="font-medium"><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="services.html">Услуги</a></li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="warranty.html">Гарантия</a></li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="blog.html">Блог</a></li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="vacancies.html">Вакансии</a></li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="contacts.html">Контакты</a></li>
+                </ul>
+              </div>
             </div>
+            <div class="footer_services">
+              <div class="footer_services__header font-semibold mb-2 text-[#003366]">
+                Сервис</div>
+              <div class="footer_services__body">
+                <ul>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="services.html#sockets" rel="noopener noreferrer">Установка
+                      розеток</a></li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="services.html#lighting">Освещение в квартире</a></li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="services.html#protection" rel="noopener noreferrer">Монтаж защиты</a></li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="services.html#wiring" rel="noopener noreferrer">Монтаж электропроводки</a>
+                  </li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="services.html#hhappliances" rel="noopener noreferrer">Подключение техники</a>
+                  </li>
+                  <li><a
+                      class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                      href="services.html#lowcurrent" rel="noreferrer noopener" target="_blank">Монтаж
+                      слаботочных систем</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer_contacts">
+            <div class="footer_contacts__header font-semibold mb-2 text-[#003366]">
+              Контакты</div>
+            <div class="footer_contacts__body">
+              <ul>
+                <li>
+                  <p
+                    class="p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5">
+                    г. Батуми, улица Пушкина, дом Колотушкина, 1488</p>
+                  <p
+                    class="p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5">
+                    Тел.: <a href="tel:+9955518282" class="contact-phone font-bold underline">+995 551-82-82</a>
+                  </p>
+                  <p
+                    class="flex justify-start items-center gap-2 p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5">
+                    <a href="#"><img class="w-[20px] max-h-[20px]" src="img/tg.svg" alt="#"></a>
+                    <a href="#"><img class="w-[20px] max-h-[20px]" src="img/wa.svg" alt="#"></a>
+                    <span><a href="tel:+9955518282" class="contact-phone font-bold underline text-lg">+995
+                        551-82-82</a></span>
+                  </p>
+                  <p
+                    class="p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5">
+                    <noindex>E-mail: <a href="mailto:georgianelectricgroup@gmail.ru">georgianelectricgroup@mail.ru</a>
+                    </noindex>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
+      </div>
     </div>
-    
+
     <div class="footer__under">
-    
-        <div class="container mx-auto flex justify-between py-8 items-center">
-            <div class="header-logo text-center flex items-center gap-4"><a href="index.html"><img class="max-w-[100px] h-auto" src="/img/logo.png" alt="">
-                </a> <span class="font-semibold">© 2007-2024 "Georgian Electric Group" - All rights reserved.</span> 
-            </div>
-                    
-                        
-                
-                        <div class="footer-socials flex gap-4 items-center">
-                            Мы в соцсетях:
-                            <a href="#"><img class="w-[40px] max-h-[40px]" src="img/insta.svg" alt="#"></a>
-                            <a href="#"><img class="w-[40px] max-h-[40px]" src="img/tt.svg" alt="#"></a>
-                            <a href="#"><img class="w-[40px] max-h-[40px]" src="img/yt.svg" alt="#"></a>
-                            <a href="#"><img class="w-[40px] max-h-[40px]" src="img/fb.svg" alt="#"></a>
-                            <!-- <a href="#"><img class="w-[40px] max-h-[40px]" src="img/tg.svg" alt="#"></a>
-                            <a href="#"><img class="w-[40px] max-h-[40px]" src="img/wa.svg" alt="#"></a> -->
-                
-                        </div>
-                
-                    
-                
-                
-                
+
+      <div class="container mx-auto flex justify-between py-8 items-center">
+        <div class="header-logo text-center flex items-center gap-4"><a href="index.html"><img
+              class="max-w-[100px] h-auto" src="/img/logo.png" alt="">
+          </a> <span class="font-semibold">© 2007-2024 "Georgian Electric Group" - All rights reserved.</span>
         </div>
-        
+
+
+
+        <div class="footer-socials flex gap-4 items-center">
+          Мы в соцсетях:
+          <a href="#"><img class="w-[40px] max-h-[40px]" src="img/insta.svg" alt="#"></a>
+          <a href="#"><img class="w-[40px] max-h-[40px]" src="img/tt.svg" alt="#"></a>
+          <a href="#"><img class="w-[40px] max-h-[40px]" src="img/yt.svg" alt="#"></a>
+          <a href="#"><img class="w-[40px] max-h-[40px]" src="img/fb.svg" alt="#"></a>
+          <!-- <a href="#"><img class="w-[40px] max-h-[40px]" src="img/tg.svg" alt="#"></a>
+                            <a href="#"><img class="w-[40px] max-h-[40px]" src="img/wa.svg" alt="#"></a> -->
+
+        </div>
+
+
+
+
+
+      </div>
+
     </div>
-    
-    </footer>
+
+  </footer>
 
 
   <script type="script" src="/script.js"></script>
