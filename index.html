@@ -10,7 +10,8 @@
 
 <body>
 
-    <div class="header-wrapper p-4 bg-white fixed top-0 left-[50%] translate-x-[-50%] z-50 w-full">
+    <div
+        class="header-wrapper p-4 bg-white fixed top-0 left-[50%] translate-x-[-50%] z-50 w-full border-b-[#003366] border-b-2">
 
         <header class="flex container mx-auto text-black bg-white w-[1920px] justify-between items-center">
             <div class="header-logo text-center"><a href="index.html"><img class="max-w-[100px] h-auto"
@@ -18,18 +19,18 @@
             <nav class="w-[50%]">
                 <ul class="flex flex-row justify-between">
                     <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                            href="about.html">О нас</a></li>
+                            href="/about.html">О нас</a></li>
                     <li class="font-medium"><a
                             class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                            href="services.html">Услуги</a></li>
+                            href="/services.html">Услуги</a></li>
                     <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                            href="warranty.html">Гарантия</a></li>
+                            href="/warranty.html">Гарантия</a></li>
                     <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                            href="blog.html">Блог</a></li>
+                            href="/blog.html">Блог</a></li>
                     <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                            href="vacancies.html">Вакансии</a></li>
+                            href="/vacancies.html">Вакансии</a></li>
                     <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                            href="contacts.html">Контакты</a></li>
+                            href="/contacts.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header-contacts flex flex-col gap-2">
@@ -997,26 +998,17 @@
 
 
 
-
+        <!-- сделай попапы на сертификаты после того как вымутишь их у Манучара -->
         <section class="certificates container mx-auto my-12">
 
-            <div class="certificat group popup-gallery2">
+            <div>
                 <h2 class="text-3xl mb-8 text-[#003366]">Наши сертификаты</h2>
 
                 <div class="flex justify-center gap-12 mb-8">
-                    <a href="/wp-content/uploads/2016/last_certificate/simon.jpg">
-                        <img class="" src="/img/sert1.jpg" alt="" width="271" height="384">
-                    </a>
-                    <a href="/wp-content/uploads/2016/last_certificate/schneider.jpg">
-                        <img class="" src="/img/sert2.jpg" alt="" width="271" height="384">
-                    </a>
-                    <a href="/wp-content/uploads/2016/last_certificate/img01.jpg">
-                        <img class="" src="/img/sert3.jpg" alt="" width="273" height="386">
-                    </a>
-
-                    <a href="/wp-content/uploads/2016/last_certificate/sert1.jpg">
-                        <img class="" src="/img/sert4.png" alt="" width="273" height="386">
-                    </a>
+                    <img class="" src="/img/sert1.jpg" alt="" width="271" height="384">
+                    <img class="" src="/img/sert2.jpg" alt="" width="271" height="384">
+                    <img class="" src="/img/sert3.jpg" alt="" width="273" height="386">
+                    <img class="" src="/img/sert4.png" alt="" width="273" height="386">
                 </div>
 
 
@@ -1039,7 +1031,35 @@
 
 
 
+        <section class="numbers bg-yellow-300 my-12 py-12">
+            <div class="flex container mx-auto justify-around">
+                <div class="numbers_item">
+                    <div class="flex-col flex items-center gap-1">
+                        <div class="numbers_item__top text-3xl text-[#003366] font-semibold">Год </div>
 
+                        <div class="numbers_item__top text-3xl text-[#003366] font-semibold"> основания</div>
+                        <div class="numbers_item__bottom text-3xl text-black">2009</div>
+                    </div>
+                </div>
+                <div class="numbers_item">
+                    <div class="flex-col flex items-center gap-1">
+                        <div class="numbers_item__top text-3xl text-[#003366] font-semibold">Профессиональных </div>
+
+                        <div class="numbers_item__top text-3xl text-[#003366] font-semibold"> электриков</div>
+                        <div class="numbers_item__bottom text-3xl text-black">200</div>
+                    </div>
+                </div>
+                <div class="numbers_item">
+                    <div class="flex-col flex items-center gap-1">
+                        <div class="numbers_item__top text-3xl text-[#003366] font-semibold">Завершенных </div>
+
+                        <div class="numbers_item__top text-3xl text-[#003366] font-semibold"> проектов</div>
+                        <div class="numbers_item__bottom text-3xl text-black">1,000+</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
 
 
@@ -1211,18 +1231,18 @@
                                 <div>
                                     <ul class="flex flex-col justify-between">
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="about.html">О нас</a></li>
+                                                href="/about.html">О нас</a></li>
                                         <li class="font-medium"><a
                                                 class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="services.html">Услуги</a></li>
+                                                href="/services.html">Услуги</a></li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="warranty.html">Гарантия</a></li>
+                                                href="/warranty.html">Гарантия</a></li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="blog.html">Блог</a></li>
+                                                href="/blog.html">Блог</a></li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="vacancies.html">Вакансии</a></li>
+                                                href="/vacancies.html">Вакансии</a></li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="contacts.html">Контакты</a></li>
+                                                href="/contacts.html">Контакты</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1232,24 +1252,24 @@
                                 <div class="footer_services__body">
                                     <ul>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="services.html#sockets" rel="noopener noreferrer">Установка
+                                                href="/services.html#sockets" rel="noopener noreferrer">Установка
                                                 розеток</a></li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="services.html#lighting">Освещение в квартире</a></li>
+                                                href="/services.html#lighting">Освещение в квартире</a></li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="services.html#protection" rel="noopener noreferrer">Монтаж
-                                                защиты</a></li>
+                                                href="/services.html#protection" rel="noopener noreferrer">Монтаж
+                                                защиты</a>
+                                        </li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="services.html#wiring" rel="noopener noreferrer">Монтаж
+                                                href="/services.html#wiring" rel="noopener noreferrer">Монтаж
                                                 электропроводки</a>
                                         </li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="services.html#hhappliances" rel="noopener noreferrer">Подключение
+                                                href="/services.html#hhappliances" rel="noopener noreferrer">Подключение
                                                 техники</a>
                                         </li>
                                         <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
-                                                href="services.html#lowcurrent" rel="noreferrer noopener"
-                                                target="_blank">Монтаж
+                                                href="/services.html#lowcurrent" rel="noreferrer noopener">Монтаж
                                                 слаботочных систем</a></li>
                                     </ul>
                                 </div>

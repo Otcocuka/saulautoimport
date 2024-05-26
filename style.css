@@ -1191,6 +1191,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 10rem;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1217,6 +1221,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .h-\[3px\] {
   height: 3px;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[600px\] {
@@ -1339,6 +1347,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 70%;
 }
 
+.w-\[700px\] {
+  width: 700px;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1399,6 +1411,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .max-w-xl {
@@ -1662,8 +1678,32 @@ input[type="range"]:active::-webkit-slider-thumb {
   scroll-snap-stop: always;
 }
 
+.scroll-mt-\[108px\] {
+  scroll-margin-top: 108px;
+}
+
 .scroll-mt-\[138px\] {
   scroll-margin-top: 138px;
+}
+
+.scroll-mt-\[95px\] {
+  scroll-margin-top: 95px;
+}
+
+.scroll-mt-\[100px\] {
+  scroll-margin-top: 100px;
+}
+
+.scroll-mt-\[105px\] {
+  scroll-margin-top: 105px;
+}
+
+.scroll-mt-\[90px\] {
+  scroll-margin-top: 90px;
+}
+
+.scroll-mt-\[88px\] {
+  scroll-margin-top: 88px;
 }
 
 .list-inside {
@@ -2582,6 +2622,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-b-\[\#003366\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 51 102 / var(--tw-border-opacity));
+}
+
 .border-t-transparent {
   border-top-color: transparent;
 }
@@ -2786,6 +2831,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-8 {
@@ -3152,6 +3201,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 .text-danger {
   --tw-text-opacity: 1;
   color: rgb(220 76 100 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -3869,6 +3923,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
 }
 
 .hover\:text-black:hover {
