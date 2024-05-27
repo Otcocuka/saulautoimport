@@ -1040,16 +1040,20 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-top: 2.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-\[150px\] {
   margin-top: 150px;
+}
+
+.mt-\[250px\] {
+  margin-top: 250px;
 }
 
 .mt-\[50px\] {
@@ -1275,20 +1279,12 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 0.375rem;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
-}
-
 .w-1\/5 {
   width: 20%;
 }
 
 .w-2 {
   width: 0.5rem;
-}
-
-.w-4\/5 {
-  width: 80%;
 }
 
 .w-5 {
@@ -1378,6 +1374,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-screen {
   width: 100vw;
+}
+
+.min-w-\[50\%\] {
+  min-width: 50%;
 }
 
 .min-w-max {
@@ -1678,28 +1678,8 @@ input[type="range"]:active::-webkit-slider-thumb {
   scroll-snap-stop: always;
 }
 
-.scroll-mt-\[108px\] {
-  scroll-margin-top: 108px;
-}
-
 .scroll-mt-\[138px\] {
   scroll-margin-top: 138px;
-}
-
-.scroll-mt-\[95px\] {
-  scroll-margin-top: 95px;
-}
-
-.scroll-mt-\[100px\] {
-  scroll-margin-top: 100px;
-}
-
-.scroll-mt-\[105px\] {
-  scroll-margin-top: 105px;
-}
-
-.scroll-mt-\[90px\] {
-  scroll-margin-top: 90px;
 }
 
 .scroll-mt-\[88px\] {
@@ -2051,10 +2031,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-48 {
-  gap: 12rem;
 }
 
 .gap-6 {
@@ -2825,10 +2801,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding: 0.5rem;
 }
 
-.p-20 {
-  padding: 5rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -2951,10 +2923,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
 }
 
 .text-left {
@@ -3831,6 +3799,48 @@ input[type="range"]:active::-webkit-slider-thumb {
   }
 }
 
+@media (min-width: 1024px) {
+  .lg\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 320px) {
+    .lg\:container {
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .lg\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lg\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .lg\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .lg\:container {
+      max-width: 1536px;
+    }
+  }
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -4423,8 +4433,17 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
   .sm\:max-w-\[604px\] {
     max-width: 604px;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:underline {
@@ -4440,19 +4459,64 @@ input[type="range"]:active::-webkit-slider-thumb {
   .md\:max-w-\[720px\] {
     max-width: 720px;
   }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:h-screen {
     height: 100vh;
   }
 
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+
   .lg\:max-w-\[972px\] {
     max-width: 972px;
+  }
+
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .lg\:gap-48 {
+    gap: 12rem;
+  }
+
+  .lg\:p-20 {
+    padding: 5rem;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .lg\:pr-72 {
+    padding-right: 18rem;
   }
 
   .dark\:lg\:hover\:\[paint-order\:markers\]:hover:is(.dark *) {
@@ -4461,6 +4525,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 @media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:max-w-full {
     max-width: 100%;
   }
@@ -4474,6 +4542,18 @@ input[type="range"]:active::-webkit-slider-thumb {
 @media (min-width: 1536px) {
   .\32xl\:max-w-\[1400px\] {
     max-width: 1400px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .sm-lg\:w-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .lg-xl\:mt-\[250px\] {
+    margin-top: 250px;
   }
 }
 

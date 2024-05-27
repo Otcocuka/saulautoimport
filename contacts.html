@@ -12,14 +12,15 @@
 
 
     <div
-        class="header-wrapper p-4 bg-white fixed top-0 left-[50%] translate-x-[-50%] z-50 w-full border-b-[#003366] border-b-2">
+        class="header-wrapper p-4 bg-white fixed top-0 left-[50%] translate-x-[-50%] z-50 w-full border-b-[#003366] border-b-2 ">
 
-        <header class="flex container mx-auto text-black bg-white w-[1920px] justify-between items-center">
+        <header
+            class="flex container mx-auto text-black bg-white w-[1920px] justify-between items-center gap-4 flex-wrap">
             <div class="header-logo text-center"><a href="index.html"><img class="max-w-[100px] h-auto"
                         src="/img/logo.png" alt=""> </a></div>
-            <nav class="w-[50%]">
+            <nav class="min-w-[50%] hidden lg:block">
                 <ul class="flex flex-row justify-between">
-                    <li><a class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
+                    <li><a class="inline-block p-2 text-lg text-slate-800 text-nowrap hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
                             href="/about.html">О нас</a></li>
                     <li class="font-medium"><a
                             class="inline-block p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
@@ -51,54 +52,56 @@
 
                 </div>
 
-
             </div>
-            <div class="header-cta">
-                <button
-                    class="flex mb-4 items-center rounded bg-[#003366] hover:text-black hover:bg-yellow-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-                    id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
-                    data-twe-ripple-color="light">
-                    Позвонить
-                </button>
-                <button
-                    class="flex items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:text-black hover:bg-yellow-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-                    id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
-                    data-twe-ripple-color="light">
-                    Оставить заявку
-                </button>
-            </div>
-            <div class="lang-switch">
-                <div class="relative" data-twe-dropdown-ref>
+            <div class="header-cta__wrapper flex gap-12 items-center lg:mx-auto">
+                <div class="header-cta  xl:block">
                     <button
-                        class="flex items-center rounded bg-yellow-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal  shadow-primary-3 transition duration-150 ease-in-out hover:bg-[#003366] hover:text-white hover:shadow-primary-2 focus:bg-[#003366] focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-[#003366] active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                        class="flex mb-4 items-center rounded bg-[#003366] hover:text-black hover:bg-yellow-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
                         id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
                         data-twe-ripple-color="light">
-                        RU
-                        <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </span>
+                        Позвонить
                     </button>
-                    <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
-                        aria-labelledby="dropdownMenuButton1" data-twe-dropdown-menu-ref>
-                        <li>
-                            <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                href="#" data-twe-dropdown-item-ref>ENG</a>
-                        </li>
-                        <li>
-                            <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                href="#" data-twe-dropdown-item-ref>KA</a>
-                        </li>
-                        <li>
-                            <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                href="#" data-twe-dropdown-item-ref>TR</a>
-                        </li>
-                    </ul>
+                    <button
+                        class="flex items-center rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:text-black hover:bg-yellow-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                        id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false" data-twe-ripple-init
+                        data-twe-ripple-color="light">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="lang-switch">
+                    <div class="relative" data-twe-dropdown-ref>
+                        <button
+                            class="flex items-center rounded bg-yellow-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal  shadow-primary-3 transition duration-150 ease-in-out hover:bg-[#003366] hover:text-white hover:shadow-primary-2 focus:bg-[#003366] focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-[#003366] active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                            id="dropdownMenuButton1" data-twe-dropdown-toggle-ref aria-expanded="false"
+                            data-twe-ripple-init data-twe-ripple-color="light">
+                            RU
+                            <span class="ms-2 w-2 [&>svg]:h-5 [&>svg]:w-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
+                            aria-labelledby="dropdownMenuButton1" data-twe-dropdown-menu-ref>
+                            <li>
+                                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    href="#" data-twe-dropdown-item-ref>ENG</a>
+                            </li>
+                            <li>
+                                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    href="#" data-twe-dropdown-item-ref>KA</a>
+                            </li>
+                            <li>
+                                <a class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                                    href="#" data-twe-dropdown-item-ref>TR</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
 
         </header>
     </div>
@@ -106,8 +109,8 @@
 
 
 
-    <section class="seo-text container mx-auto mt-[150px] text-black">
-        <div class="right w-[60%]">
+    <section class="seo-text container mx-auto mt-[250px] lg-xl:mt-[250px] sm:mt-[150px] text-black w-full">
+        <div class="right lg:w-[60%]">
             <div>
                 <h1 class="text-3xl mb-20 font-semibold">КОНТАКТЫ ЭЛЕКТРИКОВ GEORGIAN ELECTRIC GROUP</h1>
                 <h2 class="text-xl font-semibold mb-8"><span class="f2">Вызвать электрика «GEORGIAN ELECTRIC
@@ -154,7 +157,7 @@
 
 
 
-    <section class="map h-[600px] mt-[150px] mb-20">
+    <section class="map h-[600px] mt-[150px] mb-20 w-full">
 
         <iframe class="mx-auto"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.2414868230326!2d41.635833211839795!3d41.65052417951192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406787825cea75c3%3A0x718a6bf8391391ac!2sDatvebi!5e0!3m2!1sru!2sge!4v1716437737959!5m2!1sru!2sge"
@@ -164,7 +167,8 @@
     </section>
 
 
-    <section id="footer_form" class="footer-form p-8 mb-12 py-12 bg-[#003366] hero mx-auto text-black items-center ">
+    <section id="footer_form"
+        class="footer-form p-8 py-12 bg-[#003366] hero mx-auto max-w-full text-black items-center ">
 
 
 
@@ -174,26 +178,26 @@
 
 
         <div class="bg-white p-8 rounded-lg shadow-2xl container w-full mx-auto">
-            <h2 class="text-5xl font-bold text-gray-800 mb-6 text-center">Есть вопросы или предложения?</h2>
+            <h2 class="text-5xl font-bold text-gray-800 mb-6 text-center">Остались вопросы?</h2>
             <h4 class="text-2xl font-medium text-gray-800 mb-6 text-center">Оставьте удобные вам контактные данные, и мы
                 поможем!</h4>
 
             <form id="footerForm" class="space-y-4">
-                <div class="flex justify-between gap-4">
+                <div class="flex justify-between flex-wrap gap-4">
                     <div class="my-2">
                         <input
-                            class="appearance-none border border-black  block max-w-[600px] py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="appearance-none border border-black  block max-w-[600px] py-2 lg:pr-72 lg:pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
                             id="footer_name" type="text" placeholder="Имя" required>
                     </div>
                     <div class="my-2">
                         <input
-                            class="appearance-none border border-black  block max-w-[600px] w-full py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="appearance-none border border-black  block max-w-[600px] w-full py-2 lg:pr-72 lg:pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
                             id="footer_tel" type="tel" placeholder="Телефон">
                     </div>
 
                     <div class="my-2">
                         <input
-                            class="appearance-none border border-black  block max-w-[600px] w-full py-2 pr-72 pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="appearance-none border border-black  block max-w-[600px] w-full py-2 lg:pr-72 lg:pl-4 my-1 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
                             id="footer_email" type="tel" placeholder="E-mail">
                     </div>
                 </div>
@@ -231,12 +235,12 @@
 
 
 
-    <footer class="footer">
+    <footer class="footer w-full mt-20">
 
         <div>
             <div class="container mx-auto">
-                <div class="flex justify-between">
-                    <div class="flex justify-between gap-48">
+                <div class="flex justify-between flex-wrap gap-12">
+                    <div class="flex justify-center sm-lg:w-full  gap-8 lg:gap-48 lg:justify-evenly">
                         <div class="footer_sitemap">
                             <div class="footer_sitemap__header font-semibold mb-2 text-[#003366]">
                                 Карта сайта</div>
@@ -261,7 +265,7 @@
                         <div class="footer_services">
                             <div class="footer_services__header font-semibold mb-2 text-[#003366]">
                                 Сервис</div>
-                            <div class="footer_services__body">
+                            <div class="footer_services__body mx-auto">
                                 <ul>
                                     <li><a class="inline-block p-2 text-sm text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5"
                                             href="/services.html#sockets" rel="noopener noreferrer">Установка
@@ -286,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer_contacts">
+                    <div class="footer_contacts sm-lg:w-full">
                         <div class="footer_contacts__header font-semibold mb-2 text-[#003366]">
                             Контакты</div>
                         <div class="footer_contacts__body">
@@ -309,7 +313,7 @@
                                                 551-82-82</a></span>
                                     </p>
                                     <p
-                                        class="p-2 text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5">
+                                        class="p-2 sm:text-lg text-slate-800 hover:text-white tracking-wide uppercase relative group z-20 after:content-[''] after:absolute after:left-0 after:bottom-1 after:bg-[#003366] after:w-full after:h-px after:hover:h-9 after:-z-10 transition-all after:transition-all duration-100 active:translate-y-0.5">
                                         <noindex>E-mail: <a
                                                 href="mailto:georgianelectricgroup@gmail.ru">georgianelectricgroup@mail.ru</a>
                                         </noindex>
@@ -325,7 +329,7 @@
 
         <div class="footer__under">
 
-            <div class="container mx-auto flex justify-between py-8 items-center">
+            <div class="container mx-auto flex justify-between flex-wrap py-8 items-center">
                 <div class="header-logo text-center flex items-center gap-4"><a href="index.html"><img
                             class="max-w-[100px] h-auto" src="/img/logo.png" alt="">
                     </a> <span class="font-semibold">© 2007-2024 "Georgian Electric Group" - All rights reserved.</span>
