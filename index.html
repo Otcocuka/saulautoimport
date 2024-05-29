@@ -6,6 +6,8 @@
     <title>Georgian Electric Group</title>
     <link href="/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -193,7 +195,7 @@
 
 
 
-    <div id="carouselExampleCaptions" class="relative" data-twe-carousel-init data-twe-ride="carousel">
+    <!-- <div id="carouselExampleCaptions" class="relative" data-twe-carousel-init data-twe-ride="carousel"> -->
         <!--Carousel indicators-->
         <!-- <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
           data-twe-carousel-indicators>
@@ -210,9 +212,9 @@
       </div> -->
 
         <!--Carousel items-->
-        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <!-- <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"> -->
             <!--First item-->
-            <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            <!-- <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-twe-carousel-active data-twe-carousel-item style="backface-visibility: hidden">
                 <img src="/img/electric1.jpg" class="block w-full" alt="..." />
                 <div class="p-4 bg-white absolute hidden py-5 text-left text-black md:block"
@@ -231,9 +233,9 @@
                             Оставить заявку
                         </button>
                 </div>
-            </div>
+            </div> -->
             <!--Second item-->
-            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            <!-- <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-twe-carousel-item style="backface-visibility: hidden">
                 <img src="/img/electric.jpg" class="block w-full" alt="..." />
                 <div class="p-4 bg-white absolute hidden py-5 text-left text-black md:block"
@@ -252,9 +254,9 @@
                             Оставить заявку
                         </button>
                 </div>
-            </div>
+            </div> -->
             <!--Third item-->
-            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+            <!-- <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-twe-carousel-item style="backface-visibility: hidden">
                 <img src="/img/electric2.jpg" class="block w-full" alt="..." />
                 <div class="p-4 bg-white rounded-lg absolute hidden py-5 text-left text-black md:block"
@@ -273,10 +275,10 @@
                             Оставить заявку
                         </button>
                 </div>
-            </div>
+            </div> -->
 
             <!--Carousel controls - prev item-->
-            <button
+            <!-- <button
                 class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                 type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="prev">
                 <span class="inline-block h-8 w-8">
@@ -287,9 +289,9 @@
                 </span>
                 <span
                     class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
-            </button>
+            </button> -->
             <!--Carousel controls - next item-->
-            <button
+            <!-- <button
                 class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                 type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="next">
                 <span class="inline-block h-8 w-8">
@@ -301,39 +303,68 @@
                 <span
                     class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
             </button>
-        </div>
+        </div> -->
 
+
+
+        <div x-data="carousel()" class="relative w-full max-w-8xl mx-auto mt-[250px] lg-xl:mt-[250px] sm:mt-[150px]">
+            <!-- Jumbotron -->
+            
+            <!-- Carousel -->
+            <div class="relative overflow-hidden">
+              <div class="flex transition-transform duration-500" :style="`transform: translateX(-${currentIndex * 100}%);`">
+                <template x-for="(image, index) in images" :key="index">
+                  <div class="w-full flex-shrink-0">
+                    <img :src="image.src" :alt="image.alt" class="w-full h-auto object-cover">
+                  </div>
+                </template>
+              </div>
+              <!-- Navigation -->
+              <button @click="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">❮</button>
+              <button @click="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">❯</button>
+            </div>
+            
+            <!-- Indicators -->
+            <div class="flex justify-center mt-4 space-x-2">
+              <template x-for="(image, index) in images" :key="index">
+                <button @click="goTo(index)" :class="{'bg-blue-500': currentIndex === index, 'bg-gray-400': currentIndex !== index}" class="w-4 h-4 rounded-full"></button>
+              </template>
+            </div>
+          </div>
+          
+          <script>
+            function carousel() {
+              return {
+                currentIndex: 0,
+                images: [
+                  { src: '/img/electric.jpg', alt: 'Slide 1' },
+                  { src: '/img/electric1.jpg', alt: 'Slide 2' },
+                  { src: '/img/electric2.jpg', alt: 'Slide 3' },
+                ],
+                next() {
+                  this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                },
+                prev() {
+                  this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                },
+                goTo(index) {
+                  this.currentIndex = index;
+                }
+              }
+            }
+          </script>
 
         <section
-            class="p-8 mt-10 bg-white hero flex flex-col justify-around container mx-auto text-black min-h-[850px] items-center ">
+            class="p-8 bg-white hero flex flex-col justify-around container mx-auto text-black min-h-[850px] items-center mt-[250px] lg-xl:mt-[250px] sm:mt-[150px]">
 
 
 
 
 
 
-            <!-- HERO
+            
 
-
-      <div class="text-block w-[50%] mx-auto">
-          <h1 class="text-5xl mb-4">Georgian <br> Electric <br> Group</h1>
-          <h2 class="text-2xl mb-4">Электромонтажные работы в Батуми с 12-летним опытом: надежно, качественно,
-              профессионально</h2>
-
-
-
-
-          <button type="button"
-              class="inline-block rounded bg-yellow-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-warning-3 transition duration-150 ease-in-out hover:bg-yellow-300-accent-300 hover:shadow-warning-2 focus:bg-yellow-300-accent-300 focus:shadow-warning-2 focus:outline-none focus:ring-0 active:bg-yellow-300-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
-              Наши работы
-          </button>
-          <button data-twe-ripple-init data-twe-ripple-color="light"
-              class="inline-block rounded bg-[#003366] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong">
-              Связаться с нами
-          </button>
-      </div> -->
-
-            <div class="my-8 job-types flex w-[70%] justify-around">
+            <div class="my-8 job-types flex gap-12 flex-wrap justify-around">
                 <div class="job-card bg-slate-300 rounded-md p-4 hover:bg-yellow-300 hover:shadow-lg">
                     <div class="icon text-center">
                         <a href="#" data-twe-toggle="tooltip" title="Электрика в квартире">
@@ -388,10 +419,10 @@
 
 
 
-            <div class="flex">
+            <div class="sm:flex flex-wrap hidden">
 
 
-                <div class="flex flex-wrap p-4 gap-2 mx-auto justify-center w-[50%]">
+                <div class="flex flex-wrap p-4 gap-2 mx-auto justify-center lg:w-[50%]">
                     <div
                         class="w-[30%]   bg-gray-200 h-32 flex items-center justify-center rounded-md hover:bg-yellow-300 hover:shadow-lg">
 
@@ -661,100 +692,11 @@
 
 
 
-                <div class="text p-4 w-[50%]">
-                    <h4 class="text-2xl mb-4 bg-yellow-300 w-fit">Электромонтаж Батуми и Область
-                    </h4>
-                    <p>Пpeдлaгaeм ycлyги пpoфeccиoнaльныx элeктpикoв в Caнкт-Пeтepбypгe и oблacти. Bыпoлняeм
-                        элeктpoмoнтaжныe paбoты любoгo oбъeмa и cлoжнocти, нaчинaя c ycтaнoвки poзeтoк, зaкaнчивaя
-                        yклaдкoй
-                        пpoвoдки
-                        «пoд ключ» в жилыx, нeжилыx и кoммepчecкиx пoмeщeнияx. Bocпoльзoвaтьcя cepвиcoм «Poбoтex» мoгyт
-                        и
-                        физичecкиe, и
-                        юpидичecкиe лицa. C кaждым зaкaзчикoм oбязaтeльнo зaключaeм oфициaльный дoгoвop. Kaчecтвeнный
-                        peзyльтaт
-                        пoдкpeпляeтcя длитeльнoй гapaнтиeй нa выпoлнeнныe paбoты и мaтepиaлы. Для зaкaзa элeктpoмoнтaжa
-                        в
-                        «Poбoтex» вы
-                        мoжeтe вocпoльзoвaтьcя фopмoй oбpaтнoй cвязи нa caйтe или пoзвoнить личнo пo тeлeфoнy
-                        <a class="bg-yellow-300" href="tel:+8 (812) 660-55-З0">8 (812) 660-55-З0</a> . Haши
-                        coтpyдники oпepaтивнo paccмaтpивaют кaждyю зaявкy. Ecли нeoбxoдимo выпoлнить цeлый кoмплeкc
-                        paбoт,
-                        мы oтпpaвляeм
-                        cпeциaлиcтa пo aдpecy для зaмepoв и cocтaвлeния cмeты. Цeны нa peмoнт и мoнтaж вac пpиятнo
-                        yдивят.
-
-                    </p>
-                </div>
+                
             </div>
 
 
-            <ul class="jobs py-8 flex flex-wrap gap-1 container mx-auto justify-center">
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/elektroprovodka/">
-                        Монтаж электропроводки </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/perenos-rozetok/">
-                        Перенос розеток </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/podklyuchenie-duhovogo-shkafa/"> Подключение духового шкафа </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/podklyuchenie-dvuhklavishnogo-vyiklyuchatelya/"> Подключение двухклавишного
-                        выключателя </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/podklyuchenie-vyityazhki/"> Подключение вытяжки </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/prokladka-kabelya-v-gofre/"> Прокладка кабеля в гофре </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/prokladka-setevogo-kabelya/"> Прокладка сетевого кабеля </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/prokladka-telefonnogo-kabelya/"> Прокладка телефонного кабеля </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/prokladka-tv-kabelya/"> Прокладка тв-кабеля </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/ustanovka-bra/">
-                        Установка бра </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-dimmera-reostata/"> Установка диммера (реостата) </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-elektroschetchikov/"> Установка электросчетчиков </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-lyustry/">
-                        Установка люстры </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-naruzhnogo-nakladnogo-vyiklyuchatelya/"> Установка наружного
-                        (накладного)
-                        выключателя </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-prohodnogo-vyiklyuchatelya/"> Установка проходного выключателя </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-rozetok/">
-                        Установка розеток </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-shhitkov/">
-                        Установка щитков </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-teplogo-pola/"> Установка теплого пола </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-vnutrennih-vyiklyuchateley/"> Установка внутренних выключателей </a>
-                </li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-vyiklyuchateley/"> Установка выключателей </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/usluga/ustanovka-zvonka/">Установка звонка </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/zamena-avtomata/">
-                        Замена автомат </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/zamena-rozetok/">
-                        Замена розеток </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/ustranenie-korotkogo-zamyikaniya/"> Устранение короткого замыкания </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/elektromontazh-v-domah/">
-                        Электромонтаж в домах </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1"
-                        href="/elektromontazh-v-kvartirah/">
-                        Электромонтаж в квартирах </a></li>
-                <li><a class="block text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/proekt/"> Проект
-                        электрики
-                    </a></li>
-
-            </ul>
+            
 
 
 
@@ -767,6 +709,102 @@
         </section>
 
 
+        <section class="jobs container mx-auto text-center">
+            <div class="text p-4 w-full lg:w-[50%] ">
+                <h4 class="text-2xl mb-4 bg-yellow-300 w-fit">Электромонтаж Батуми и Область
+                </h4>
+                <p>Пpeдлaгaeм ycлyги пpoфeccиoнaльныx элeктpикoв в Caнкт-Пeтepбypгe и oблacти. Bыпoлняeм
+                    элeктpoмoнтaжныe paбoты любoгo oбъeмa и cлoжнocти, нaчинaя c ycтaнoвки poзeтoк, зaкaнчивaя
+                    yклaдкoй
+                    пpoвoдки
+                    «пoд ключ» в жилыx, нeжилыx и кoммepчecкиx пoмeщeнияx. Bocпoльзoвaтьcя cepвиcoм «Poбoтex» мoгyт
+                    и
+                    физичecкиe, и
+                    юpидичecкиe лицa. C кaждым зaкaзчикoм oбязaтeльнo зaключaeм oфициaльный дoгoвop. Kaчecтвeнный
+                    peзyльтaт
+                    пoдкpeпляeтcя длитeльнoй гapaнтиeй нa выпoлнeнныe paбoты и мaтepиaлы. Для зaкaзa элeктpoмoнтaжa
+                    в
+                    «Poбoтex» вы
+                    мoжeтe вocпoльзoвaтьcя фopмoй oбpaтнoй cвязи нa caйтe или пoзвoнить личнo пo тeлeфoнy
+                    <a class="bg-yellow-300" href="tel:+8 (812) 660-55-З0">8 (812) 660-55-З0</a> . Haши
+                    coтpyдники oпepaтивнo paccмaтpивaют кaждyю зaявкy. Ecли нeoбxoдимo выпoлнить цeлый кoмплeкc
+                    paбoт,
+                    мы oтпpaвляeм
+                    cпeциaлиcтa пo aдpecy для зaмepoв и cocтaвлeния cмeты. Цeны нa peмoнт и мoнтaж вac пpиятнo
+                    yдивят.
+
+                </p>
+            </div>
+            <ul class="jobs py-8 flex flex-wrap gap-1 justify-center items-center">
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/elektroprovodka/">
+                        Монтаж электропроводки </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/perenos-rozetok/">
+                        Перенос розеток </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/podklyuchenie-duhovogo-shkafa/"> Подключение духового шкафа </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-wrap p-1"
+                        href="/usluga/podklyuchenie-dvuhklavishnogo-vyiklyuchatelya/"> Подключение двухклавишного
+                        выключателя </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/podklyuchenie-vyityazhki/"> Подключение вытяжки </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/prokladka-kabelya-v-gofre/"> Прокладка кабеля в гофре </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/prokladka-setevogo-kabelya/"> Прокладка сетевого кабеля </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/prokladka-telefonnogo-kabelya/"> Прокладка телефонного кабеля </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/prokladka-tv-kabelya/"> Прокладка тв-кабеля </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/ustanovka-bra/">
+                        Установка бра </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-dimmera-reostata/"> Установка диммера (реостата) </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-elektroschetchikov/"> Установка электросчетчиков </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-lyustry/">
+                        Установка люстры </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-wrap p-1"
+                        href="/usluga/ustanovka-naruzhnogo-nakladnogo-vyiklyuchatelya/"> Установка наружного
+                        (накладного)
+                        выключателя </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-prohodnogo-vyiklyuchatelya/"> Установка проходного выключателя </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-rozetok/">
+                        Установка розеток </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-shhitkov/">
+                        Установка щитков </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-teplogo-pola/"> Установка теплого пола </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-vnutrennih-vyiklyuchateley/"> Установка внутренних выключателей </a>
+                </li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-vyiklyuchateley/"> Установка выключателей </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/usluga/ustanovka-zvonka/">Установка звонка </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/zamena-avtomata/">
+                        Замена автомат </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/usluga/zamena-rozetok/">
+                        Замена розеток </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/ustranenie-korotkogo-zamyikaniya/"> Устранение короткого замыкания </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/elektromontazh-v-domah/">
+                        Электромонтаж в домах </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1"
+                        href="/elektromontazh-v-kvartirah/">
+                        Электромонтаж в квартирах </a></li>
+                <li><a class="text-white bg-slate-600 rounded-lg text-nowrap p-1" href="/proekt/"> Проект
+                        электрики
+                    </a></li>
+    
+            </ul>
+        </section>
+        
+
+
 
 
 
@@ -776,14 +814,14 @@
                 <div class="p-8 my-12 hero container mx-auto text-black items-center">
                     <h3 class="text-4xl mb-8">Преимущества</h3>
                     <!-- <h4 class="mb-8">Быстро, качественно, с гарантией на все виды работ. Бесплатная диагностика при любом ремонте.</h4> -->
-                    <div class="py-4 advantages flex justify-around">
-                        <div class="advantages_qitem flex flex-col items-center gap-4">
+                    <div class="py-4 advantages flex flex-wrap justify-around gap-12">
+                        <div class="advantages_item flex flex-col items-center gap-4">
                             <div class="advantage_item__pic"><img width="64px" height="64px" src="/img/cog.svg" alt="#">
                             </div>
                             <div class="advantage_item__name">
                                 <h4>БОЛЬШОЙ ОПЫТ</h4>
                             </div>
-                            <div class="advantage_item__description text-center">Мы тщательно отбираем специалистов,
+                            <div class="advantage_item__description text-wrap text-center">Мы тщательно отбираем специалистов, <br>
                                 т.к.
                                 дорожим своей
                                 репутацией</div>
@@ -795,9 +833,9 @@
                             <div class="advantage_item__name">
                                 <h4>БЕЗОПАСНОСТЬ</h4>
                             </div>
-                            <div class="advantage_item__description text-center">Как и любая ответственная за свою
+                            <div class="advantage_item__description text-wrap text-center">Как и любая ответственная за свою
                                 работу
-                                компания, мы даем
+                                компания, <br> мы даем
                                 гарантию безопасности систем, установленных нами</div>
                         </div>
                         <div class="advantages_item  flex flex-col items-center  gap-4">
@@ -807,7 +845,7 @@
                             <div class="advantage_item__name">
                                 <h4>КАЧЕСТВО</h4>
                             </div>
-                            <div class="advantage_item__description text-center">Мы всегда соблюдаем обозначенные сроки,
+                            <div class="advantage_item__description text-wrap text-center">Мы всегда соблюдаем обозначенные сроки, <br>
                                 и не
                                 заставляем людей ждать</div>
                         </div>
@@ -817,9 +855,9 @@
                             <div class="advantage_item__name">
                                 <h4>НАДЕЖНОСТЬ</h4>
                             </div>
-                            <div class="advantage_item__description text-center">Мы ручаемся за то, что установленные
+                            <div class="advantage_item__description text-wrap text-center">Мы ручаемся за то, что установленные
                                 нами
-                                системы будут служить вам верой и правдой весь срок эксплуатации
+                                системы <br> будут служить вам верой и правдой весь срок эксплуатации
                             </div>
                         </div>
                     </div>
@@ -827,7 +865,7 @@
             </div>
 
 
-            <div class="py-8 my-12 container mx-auto flex justify-around">
+            <div class="py-4 advantages flex flex-wrap justify-around gap-12">
                 <div class="advantages_item flex flex-col items-center gap-4">
                     <div class="advantage_item__name">
                         <h4>БОЛЬШОЙ ОПЫТ</h4>
@@ -885,7 +923,7 @@
 
 
             <div
-                class="p-8 my-12  flex  container mx-auto bg-yellow-300 gap-6 flex-col flex-wrap  justify-around text-black">
+                class="p-8 my-12 hidden  sm:flex  container mx-auto bg-yellow-300 gap-6 flex-col flex-wrap  justify-around text-black">
                 <h3 class="text-center text-3xl font-bold text-[#003366]">Схема работы</h3>
                 <div class="flex justify-between 2xl:mx-[70px] flex-wrap gap-8">
 
@@ -931,7 +969,7 @@
                     </div>
                 </div>
 
-                <div class="hidden lg:flex justify-around">
+                <div class="hidden xl:flex justify-around">
                     <img src="img/1lineika.png" class="block w-full h-[30px] mx-[70px]" alt="#">
                 </div>
 
@@ -1099,13 +1137,13 @@
         <!-- сделай попапы на сертификаты после того как вымутишь их у Манучара -->
         <section class="certificates container mx-auto my-12">
             <div>
-                <h2 class="text-3xl mb-8 text-[#003366] text-center">Наши сертификаты</h2>
+                <h2 class="text-3xl gap-8 mb-8 text-[#003366] text-center">Наши сертификаты</h2>
 
-                <div class="flex flex-col md:flex-row justify-center md:gap-12 mb-8">
-                    <img class="mb-4 md:mb-0" src="/img/sert1.jpg" alt="" width="271" height="384">
-                    <img class="mb-4 md:mb-0" src="/img/sert2.jpg" alt="" width="271" height="384">
-                    <img class="mb-4 md:mb-0" src="/img/sert3.jpg" alt="" width="273" height="386">
-                    <img class="mb-4 md:mb-0" src="/img/sert4.png" alt="" width="273" height="386">
+                <div class="flex  justify-center flex-wrap mb-8">
+                    <img class="mb-4 md:mb-0" src="/img/sert1.jpg" alt="#">
+                    <img class="mb-4 md:mb-0" src="/img/sert2.jpg" alt="#">
+                    <img class="mb-4 md:mb-0" src="/img/sert3.jpg" alt="#">
+                    <img class="mb-4 md:mb-0" src="/img/sert4.png" alt="#">
                 </div>
 
                 <div class="text-center">
@@ -1159,9 +1197,9 @@
         <section class="seo container mx-auto my-12">
 
 
-            <div class="block-desc flex justify-around mb-4">
+            <div class="block-desc flex flex-wrap justify-around mb-4">
 
-                <div class="block image-block picture big">
+                <div class="mb-12">
                     <picture>
                         <source media="(max-width:992px)"
                             srcset="https://xn--90aizbhpw.xn--p1ai/img/shhitki-osobennosti-226x300.jpg.webp">
@@ -1170,7 +1208,7 @@
                         <img src="https://xn--90aizbhpw.xn--p1ai/img/shhitki-osobennosti.jpg.webp" alt="">
                     </picture>
                 </div>
-                <div class="text-block w-[40%]">
+                <div class="text-block md:w-[40%]">
                     <div class="lg:text-2xl font-semibold text-black">В каких случаях стоит вызывать профессиональных
                         электриков</div>
                     <div class="text-left">
@@ -1208,8 +1246,8 @@
 
 
 
-            <div class="block-desc flex justify-around">
-                <div class="text-block w-[40%]">
+            <div class="block-desc flex flex-wrap-reverse justify-around">
+                <div class="text-block md:w-[40%]">
                     <div class="text-2xl font-semibold text-black">Почему стоит пользоваться услугами профессиональных
                         электриков
                     </div>
@@ -1234,7 +1272,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="block image-block picture big">
+                <div class="mb-12">
                     <picture>
                         <source media="(max-width:992px)"
                             srcset="https://xn--90aizbhpw.xn--p1ai/img/predvaritelnye-raboty-2-226x300.jpg.webp">
@@ -1442,6 +1480,7 @@
         </footer>
 
         <script type="text/javascript" src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/cdn.min.js" defer></script>
         <script type="text/javascript" src="/script.js"></script>
 </body>
 
