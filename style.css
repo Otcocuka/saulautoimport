@@ -1267,14 +1267,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 100vh;
 }
 
-.h-\[550px\] {
-  height: 550px;
-}
-
-.h-\[583px\] {
-  height: 583px;
-}
-
 .max-h-\[20px\] {
   max-height: 20px;
 }
@@ -2866,11 +2858,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 .object-center {
   -o-object-position: center;
      object-position: center;
-}
-
-.object-top {
-  -o-object-position: top;
-     object-position: top;
 }
 
 .\!p-0 {
