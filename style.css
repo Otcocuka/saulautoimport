@@ -1351,10 +1351,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 30px;
 }
 
-.w-\[40\%\] {
-  width: 40%;
-}
-
 .w-\[40px\] {
   width: 40px;
 }
@@ -4602,8 +4598,20 @@ input[type="range"]:active::-webkit-slider-thumb {
     display: block;
   }
 
+  .md\:h-\[500px\] {
+    height: 500px;
+  }
+
   .md\:w-\[40\%\] {
     width: 40%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:w-\[700px\] {
+    width: 700px;
   }
 
   .md\:max-w-\[720px\] {
