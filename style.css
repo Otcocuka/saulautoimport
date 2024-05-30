@@ -2609,11 +2609,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-style: none;
 }
 
-.border-\[\#003366\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 51 102 / var(--tw-border-opacity));
-}
-
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
