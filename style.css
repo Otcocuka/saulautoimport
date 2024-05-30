@@ -4688,6 +4688,10 @@ input[type="range"]:active::-webkit-slider-thumb {
     display: flex;
   }
 
+  .xl\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .xl\:max-w-full {
     max-width: 100%;
   }
