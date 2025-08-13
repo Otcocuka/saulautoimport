@@ -108,3 +108,25 @@ document.addEventListener("DOMContentLoaded", function () {
       );
   }
 });
+
+
+
+// accordion
+
+
+
+document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', () => {
+      const body = button.nextElementSibling;
+
+      if (body.classList.contains('hidden')) {
+        body.classList.remove('hidden');
+        body.classList.add('block');
+        button.setAttribute('aria-expanded', 'true');
+      } else {
+        body.classList.add('hidden');
+        body.classList.remove('block');
+        button.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
